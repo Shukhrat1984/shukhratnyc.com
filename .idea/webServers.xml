@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7efdc879-c4f0-4038-83cc-c36e5b49ba33" name="shukhratnyc.uz" url="http://shukhratnyc.uz">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\shukhratnyc.uz" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
