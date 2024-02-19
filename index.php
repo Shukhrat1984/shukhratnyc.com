@@ -135,9 +135,9 @@
                             <div class="col-lg-2 col-md-2 col-2">
                                 <div class="header-right">
                                     <div class="header-btn">
-                                        <a class="theme-btn" download="My Cv" href="assets/images/cv.jpg"
+                                        <a class="theme-btn" download="My Cv" href="assets/images/resumeio.pdf"
                                             title="ImageName">
-                                            <img class="hide-img" alt="ImageName" src="assets/images/cv.jpg">
+                                            <img class="hide-img" alt="ImageName" src="assets/images/resume2.jpg">
                                             Resume
                                         </a>
                                     </div>
@@ -1081,7 +1081,7 @@
                                 <p>Here is my social network, write to me, I will be very grateful.</p>
                                 <div class="social-icons">
                                     <ul>
-                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/shukhratnyc"><i class="ti-linkedin"></i></a></li>
                                         <li><a href="#"><i class="ti-facebook"></i></a></li>
                                         <li><a href="#"><i class="ti-instagram"></i></a></li>
                                         <!--

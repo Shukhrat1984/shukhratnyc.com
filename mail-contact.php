@@ -1,6 +1,6 @@
 <?php
 
-	$to = "wpoceanmarketing@gmail.com"; // this is your Email address
+	$to = "shukhratnasriddinov1984@gmail.com"; // this is your Email address
 	$from  = $_POST['email']; // this is the sender's Email address
 	$sender_name = $_POST['name'];
 	$adress = $_POST['adress'];
