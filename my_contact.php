@@ -1,13 +1,9 @@
 <?php
-// Получение значения параметра source
 $source = isset($_GET['source']) ? $_GET['source'] : '';
 
-// Использование значения source
 if ($source === 'index') {
-    // Ваш код для связи с index.php
     echo '';
 } else {
-    // Если параметр source не определен или имеет другое значение
     echo '';
 }
 ?>
@@ -61,7 +57,7 @@ if ($source === 'index') {
 <!--Sender Contact Form section starting-->
 <div class="container">
     <h2>Sender Contact Form</h2>
-    <form action="mail_my_contact.php" method="post">
+    <form action="mail.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required placeholder="Your name">
 
@@ -75,7 +71,7 @@ if ($source === 'index') {
         <input type="text" id="adress" name="adress" placeholder="Your address">
 
         <label for="note">Message:</label>
-        <textarea id="note" name="note" rows="4" placeholder="Your massage"></textarea>
+        <textarea id="note" name="note" rows="4" placeholder="Your message"></textarea>
 
         <input class="button" type="submit" value="Submit">
     </form>
@@ -85,3 +81,4 @@ if ($source === 'index') {
 <script src="js/my_contact.js"></script>
 </body>
 </html>
+

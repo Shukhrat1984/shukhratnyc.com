@@ -1,43 +1,50 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $address = htmlspecialchars($_POST['adress']); // Corrected the field name
+    $message = htmlspecialchars($_POST['note']);
 
-require 'path/to/PHPMailer/src/Exception.php';
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
+    // Email recipient
+    $to = 'shukhratnasriddinov1984@gmail.com';
+    // Email subject
+    $subject = 'Contact Form Submission';
+    // Email body content
+    $email_body = "
+        <html>
+        <head>
+            <title>Contact Form Submission</title>
+        </head>
+        <body>
+            <p><strong>Name:</strong> $name</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Phone:</strong> $phone</p>
+            <p><strong>Address:</strong> $address</p>
+            <p><strong>Message:</strong> $message</p>
+        </body>
+        </html>
+    ";
+    // Headers for the email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= 'From: ' . $email . "\r\n";
+    $headers .= 'Reply-To: ' . $email . "\r\n";
+    $headers .= 'X-Mailer: PHP/' . phpversion();
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    $fullname = 'Jessica Smith';
-    $email = 'info@myitedu.us';
-    $message = 'Howdy Partner! This is a test email sent from a contact form on my website.';
-
-    $mail = new PHPMailer(true);
-    try {
-        //Server settings
-        $mail->isSMTP();
-        $mail->Host = 'mail.shukhratnyc.com'; // Set the SMTP server to send through
-        $mail->SMTPAuth = true;
-        $mail->Username = 'info@shukhratnyc.com'; // SMTP username
-        $mail->Password = 'Shukhrat!2024'; // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 465;
-
-        //Recipients
-        $mail->setFrom('jon@myitedu.us', 'Jon Toshmatov');
-        $mail->addAddress('shukhratnasriddinov1984@gmail.com', 'Shukhrat Nasriddinov'); // Add a recipient
-
-        // Content
-        $mail->isHTML(true); // Set email format to HTML
-        $mail->Subject = 'Contact Form Submission';
-        $mail->Body    = "Name: $fullname<br>Email: $email<br>Message: $message";
-        $mail->AltBody = "Name: $fullname\nEmail: $email\nMessage: $message";
-
-        $mail->send();
-        echo 'Message has been sent';
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // Send the email
+    if (mail($to, $subject, $email_body, $headers)) {
+        $msg = 'Message has been sent successfully';
+	header("Location: thankyou.php?msg=$msg");
+	exit;
+    } else {
+        echo 'Message could not be sent';
+	$msg = 'Message could not be sent';
+        header("Location: thankyou.php?msg=$msg");
     }
+} else {
+    echo 'Invalid request method';
 }
-
-
 ?>
+
