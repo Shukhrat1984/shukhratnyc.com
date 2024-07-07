@@ -10,3 +10,16 @@ Hobby slide (About programmer and cars).
 
 
 4. footer
+
+
+
+
+
+Secure SSL/TLS Settings (Recommended)
+Username:  info@shukhratnyc.com
+Password:  Use the email account’s password.
+Incoming Server:  mail.shukhratnyc.com
+IMAP Port: 993 POP3 Port: 995
+Outgoing Server:  mail.shukhratnyc.com
+SMTP Port: 465
+IMAP, POP3, and SMTP require authentication.
