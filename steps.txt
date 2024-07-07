@@ -1,0 +1,12 @@
+1. header
+Menu (Logo + Navigation) DONE
+
+2. nav
+Animation slide  DONE
+
+
+3. body
+Hobby slide (About programmer and cars).
+
+
+4. footer

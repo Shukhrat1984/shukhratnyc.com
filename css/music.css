@@ -1,0 +1,633 @@
+
+/*-------------------Pulsing Flower section starting--------------------*/
+.flower {
+    display: grid;
+    font-size: 0.15em; /*flower size regulator*/
+    height: 110em;
+    place-items: center;
+}
+.x {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    border-radius: 12px;
+    animation: ease 2s alternate infinite;
+}
+.x:nth-of-type(1) {
+    box-shadow: 0 0 0.5em rgba(255,255,255,0.1);
+    border-radius: 1.2em;
+    width: 4em;
+    height: 4em;
+    background: hsl(208,100%,30%);
+    animation-name: x-1;
+    animation-delay: 80ms;
+    transform: rotate(36deg);
+    z-index: 99;
+}
+@keyframes x-1 {
+    to {
+        transform: rotate(36deg) scale(0.6);
+    }
+}
+.x:nth-of-type(2) {
+    box-shadow: 0 0 1em rgba(255,255,255,0.1);
+    border-radius: 1.4em;
+    width: 8em;
+    height: 8em;
+    background: hsl(208,100%,33%);
+    animation-name: x-2;
+    animation-delay: 160ms;
+    transform: rotate(72deg);
+    z-index: 98;
+}
+@keyframes x-2 {
+    to {
+        transform: rotate(72deg) scale(0.6);
+    }
+}
+.x:nth-of-type(3) {
+    box-shadow: 0 0 1.5em rgba(255,255,255,0.1);
+    border-radius: 1.6em;
+    width: 12em;
+    height: 12em;
+    background: hsl(208,100%,36%);
+    animation-name: x-3;
+    animation-delay: 240ms;
+    transform: rotate(108deg);
+    z-index: 97;
+}
+@keyframes x-3 {
+    to {
+        transform: rotate(108deg) scale(0.6);
+    }
+}
+.x:nth-of-type(4) {
+    box-shadow: 0 0 2em rgba(255,255,255,0.1);
+    border-radius: 1.8em;
+    width: 16em;
+    height: 16em;
+    background: hsl(208,100%,39%);
+    animation-name: x-4;
+    animation-delay: 320ms;
+    transform: rotate(144deg);
+    z-index: 96;
+}
+@keyframes x-4 {
+    to {
+        transform: rotate(144deg) scale(0.6);
+    }
+}
+.x:nth-of-type(5) {
+    box-shadow: 0 0 2.5em rgba(255,255,255,0.1);
+    border-radius: 2em;
+    width: 20em;
+    height: 20em;
+    background: hsl(208,100%,42%);
+    animation-name: x-5;
+    animation-delay: 400ms;
+    transform: rotate(180deg);
+    z-index: 95;
+}
+@keyframes x-5 {
+    to {
+        transform: rotate(180deg) scale(0.6);
+    }
+}
+.x:nth-of-type(6) {
+    box-shadow: 0 0 3em rgba(255,255,255,0.1);
+    border-radius: 2.2em;
+    width: 24em;
+    height: 24em;
+    background: hsl(208,100%,45%);
+    animation-name: x-6;
+    animation-delay: 480ms;
+    transform: rotate(216deg);
+    z-index: 94;
+}
+@keyframes x-6 {
+    to {
+        transform: rotate(216deg) scale(0.6);
+    }
+}
+.x:nth-of-type(7) {
+    box-shadow: 0 0 3.5em rgba(255,255,255,0.1);
+    border-radius: 2.4em;
+    width: 28em;
+    height: 28em;
+    background: hsl(208,100%,48%);
+    animation-name: x-7;
+    animation-delay: 560ms;
+    transform: rotate(252deg);
+    z-index: 93;
+}
+@keyframes x-7 {
+    to {
+        transform: rotate(252deg) scale(0.6);
+    }
+}
+.x:nth-of-type(8) {
+    box-shadow: 0 0 4em rgba(255,255,255,0.1);
+    border-radius: 2.6em;
+    width: 32em;
+    height: 32em;
+    background: hsl(208,100%,51%);
+    animation-name: x-8;
+    animation-delay: 640ms;
+    transform: rotate(288deg);
+    z-index: 92;
+}
+@keyframes x-8 {
+    to {
+        transform: rotate(288deg) scale(0.6);
+    }
+}
+.x:nth-of-type(9) {
+    box-shadow: 0 0 4.5em rgba(255,255,255,0.1);
+    border-radius: 2.8em;
+    width: 36em;
+    height: 36em;
+    background: hsl(208,100%,54%);
+    animation-name: x-9;
+    animation-delay: 720ms;
+    transform: rotate(324deg);
+    z-index: 91;
+}
+@keyframes x-9 {
+    to {
+        transform: rotate(324deg) scale(0.6);
+    }
+}
+.x:nth-of-type(10) {
+    box-shadow: 0 0 5em rgba(255,255,255,0.1);
+    border-radius: 3em;
+    width: 40em;
+    height: 40em;
+    background: hsl(208,100%,57%);
+    animation-name: x-10;
+    animation-delay: 800ms;
+    transform: rotate(360deg);
+    z-index: 90;
+}
+@keyframes x-10 {
+    to {
+        transform: rotate(360deg) scale(0.6);
+    }
+}
+.x:nth-of-type(11) {
+    box-shadow: 0 0 5.5em rgba(255,255,255,0.1);
+    border-radius: 3.2em;
+    width: 44em;
+    height: 44em;
+    background: hsl(208,100%,60%);
+    animation-name: x-11;
+    animation-delay: 880ms;
+    transform: rotate(396deg);
+    z-index: 89;
+}
+@keyframes x-11 {
+    to {
+        transform: rotate(396deg) scale(0.6);
+    }
+}
+.x:nth-of-type(12) {
+    box-shadow: 0 0 6em rgba(255,255,255,0.1);
+    border-radius: 3.4em;
+    width: 48em;
+    height: 48em;
+    background: hsl(208,100%,63%);
+    animation-name: x-12;
+    animation-delay: 960ms;
+    transform: rotate(432deg);
+    z-index: 88;
+}
+@keyframes x-12 {
+    to {
+        transform: rotate(432deg) scale(0.6);
+    }
+}
+.x:nth-of-type(13) {
+    box-shadow: 0 0 6.5em rgba(255,255,255,0.1);
+    border-radius: 3.6em;
+    width: 52em;
+    height: 52em;
+    background: hsl(208,100%,66%);
+    animation-name: x-13;
+    animation-delay: 1040ms;
+    transform: rotate(468deg);
+    z-index: 87;
+}
+@keyframes x-13 {
+    to {
+        transform: rotate(468deg) scale(0.6);
+    }
+}
+.x:nth-of-type(14) {
+    box-shadow: 0 0 7em rgba(255,255,255,0.1);
+    border-radius: 3.8em;
+    width: 56em;
+    height: 56em;
+    background: hsl(208,100%,69%);
+    animation-name: x-14;
+    animation-delay: 1120ms;
+    transform: rotate(504deg);
+    z-index: 86;
+}
+@keyframes x-14 {
+    to {
+        transform: rotate(504deg) scale(0.6);
+    }
+}
+.x:nth-of-type(15) {
+    box-shadow: 0 0 7.5em rgba(255,255,255,0.1);
+    border-radius: 4em;
+    width: 60em;
+    height: 60em;
+    background: hsl(208,100%,72%);
+    animation-name: x-15;
+    animation-delay: 1200ms;
+    transform: rotate(540deg);
+    z-index: 85;
+}
+@keyframes x-15 {
+    to {
+        transform: rotate(540deg) scale(0.6);
+    }
+}
+.x:nth-of-type(16) {
+    box-shadow: 0 0 8em rgba(255,255,255,0.1);
+    border-radius: 4.2em;
+    width: 64em;
+    height: 64em;
+    background: hsl(208,100%,75%);
+    animation-name: x-16;
+    animation-delay: 1280ms;
+    transform: rotate(576deg);
+    z-index: 84;
+}
+@keyframes x-16 {
+    to {
+        transform: rotate(576deg) scale(0.6);
+    }
+}
+.x:nth-of-type(17) {
+    box-shadow: 0 0 8.5em rgba(255,255,255,0.1);
+    border-radius: 4.4em;
+    width: 68em;
+    height: 68em;
+    background: hsl(208,100%,78%);
+    animation-name: x-17;
+    animation-delay: 1360ms;
+    transform: rotate(612deg);
+    z-index: 83;
+}
+@keyframes x-17 {
+    to {
+        transform: rotate(612deg) scale(0.6);
+    }
+}
+.x:nth-of-type(18) {
+    box-shadow: 0 0 9em rgba(255,255,255,0.1);
+    border-radius: 4.6em;
+    width: 72em;
+    height: 72em;
+    background: hsl(208,100%,81%);
+    animation-name: x-18;
+    animation-delay: 1440ms;
+    transform: rotate(648deg);
+    z-index: 82;
+}
+@keyframes x-18 {
+    to {
+        transform: rotate(648deg) scale(0.6);
+    }
+}
+.x:nth-of-type(19) {
+    box-shadow: 0 0 9.5em rgba(255,255,255,0.1);
+    border-radius: 4.8em;
+    width: 76em;
+    height: 76em;
+    background: hsl(208,100%,84%);
+    animation-name: x-19;
+    animation-delay: 1520ms;
+    transform: rotate(684deg);
+    z-index: 81;
+}
+@keyframes x-19 {
+    to {
+        transform: rotate(684deg) scale(0.6);
+    }
+}
+.x:nth-of-type(20) {
+    box-shadow: 0 0 10em rgba(255,255,255,0.1);
+    border-radius: 5em;
+    width: 80em;
+    height: 80em;
+    background: hsl(208,100%,87%);
+    animation-name: x-20;
+    animation-delay: 1600ms;
+    transform: rotate(720deg);
+    z-index: 80;
+}
+@keyframes x-20 {
+    to {
+        transform: rotate(720deg) scale(0.6);
+    }
+}
+
+/*-------------------Hexagonal photos section starting--------------------*/
+.hexagon-photo {
+    font-size: 1em;
+    position: relative;
+    height: 37em;
+    width: 39em;
+    margin: 20px auto;
+    background-image: radial-gradient(circle, #337AB7 0%, #337AB7 70%, transparent 70%, transparent 100%), radial-gradient(circle, #BFE2FF 0%, #BFE2FF 70%, transparent 70%, transparent 100%), radial-gradient(circle, #BFE2FF 0%, #BFE2FF 70%, transparent 70%, transparent 100%);
+    background-repeat: no-repeat;
+    background-size: 20em 20em, 15em 15em, 12em 12em;
+    background-position: 5em 5em, 20em 10em, 11em 25em;
+}
+@media screen and (max-width: 767px) {
+    .hexagon-photo {
+        height: 46em;
+        width: 30em;
+        background-size: 20em 20em, 17em 17em, 10em 10em;
+        background-position: 2em 3em, 10em 16em, 3em 32em;
+    }
+}
+@media screen and (max-width: 580px) {
+    .hexagon-photo {
+        height: 61em;
+        width: 20em;
+        background-size: 18em 18em, 17em 17em, 10em 10em;
+        background-position: 1.5em 7em, 0em 25em, 7em 44em;
+    }
+}
+.hexagon {
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    filter: drop-shadow(0 7px 15px rgba(0, 0, 0, 0.5));
+}
+.hexagon.hex-big {
+    height: 15em;
+    width: 15em;
+}
+.hexagon.hex-small {
+    height: 6em;
+    width: 6em;
+}
+.hexagon:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    background-size: cover;
+}
+.hexagon:nth-of-type(1):before {
+    background-image: url("../music_img2/m_jackson.jpg");
+}
+.hexagon:nth-of-type(2):before {
+    background-image: url("../music_img2/linkin_park.jpg");
+}
+.hexagon:nth-of-type(3):before {
+    background-image: url("../music_img2/celine_dion.jpg");
+}
+.hexagon:nth-of-type(4):before {
+    background-image: url("../music_img2/mark_anthony.jpg");
+}
+.hexagon:nth-of-type(5):before {
+    background-image: url("../music_img2/pitbull.jpg");
+}
+.hexagon:nth-of-type(6):before {
+    background-image: url("../music_img2/sting.jpg");
+}
+.hexagon:nth-of-type(7):before {
+    background-image: url("../music_img2/aguilera.jpg");
+}
+.hexagon:nth-of-type(8):before {
+    background-image: url("../music_img2/50_cent.jpg");
+}
+.hexagon:nth-of-type(9):before {
+    background-image: url("../music_img2/pink.jpg");
+}
+.hexagon:nth-of-type(1) {
+    top: 3em;
+    left: 5em;
+}
+.hexagon:nth-of-type(2) {
+    top: 11em;
+    left: 18em;
+}
+.hexagon:nth-of-type(3) {
+    top: 0;
+    left: 19em;
+}
+.hexagon:nth-of-type(4) {
+    top: 22em;
+    left: 10em;
+}
+.hexagon:nth-of-type(5) {
+    top: 27em;
+    left: 20em;
+}
+.hexagon:nth-of-type(6) {
+    top: 30em;
+    left: 5em;
+}
+.hexagon:nth-of-type(7) {
+    top: 10em;
+    left: 32em;
+}
+.hexagon:nth-of-type(8) {
+    top: 1em;
+    left: 1em;
+}
+.hexagon:nth-of-type(9) {
+    top: 23em;
+    left: 31em;
+}
+@media screen and (max-width: 767px) {
+    .hexagon:nth-of-type(1) {
+        top: 3em;
+        left: 5em;
+    }
+    .hexagon:nth-of-type(2) {
+        top: 17em;
+        left: 14em;
+    }
+    .hexagon:nth-of-type(3) {
+        top: 0;
+        left: 19em;
+    }
+    .hexagon:nth-of-type(4) {
+        top: 27em;
+        left: 6em;
+    }
+    .hexagon:nth-of-type(5) {
+        top: 33em;
+        left: 16em;
+    }
+    .hexagon:nth-of-type(6) {
+        top: 14em;
+        left: 1em;
+    }
+    .hexagon:nth-of-type(7) {
+        top: 40em;
+        left: 11em;
+    }
+    .hexagon:nth-of-type(8) {
+        top: 1em;
+        left: 1em;
+    }
+    .hexagon:nth-of-type(9) {
+        top: 11em;
+        left: 20em;
+    }
+}
+@media screen and (max-width: 580px) {
+    .hexagon:nth-of-type(1) {
+        top: 4em;
+        left: 4em;
+    }
+    .hexagon:nth-of-type(2) {
+        top: 20em;
+        left: 1em;
+    }
+    .hexagon:nth-of-type(3) {
+        top: 35em;
+        left: 7em;
+    }
+    .hexagon:nth-of-type(4) {
+        top: 43em;
+        left: 0em;
+    }
+    .hexagon:nth-of-type(5) {
+        top: 48em;
+        left: 9em;
+    }
+    .hexagon:nth-of-type(6) {
+        top: 20em;
+        left: 14em;
+        height: 4em;
+        width: 4em;
+    }
+    .hexagon:nth-of-type(7) {
+        top: 54em;
+        left: 3em;
+    }
+    .hexagon:nth-of-type(8) {
+        top: 1em;
+        left: 1em;
+    }
+    .hexagon:nth-of-type(9) {
+        top: 36em;
+        left: 4em;
+        height: 3em;
+        width: 3em;
+    }
+}
+
+/*----------------------Carousel-3d section starting----------------------*/
+.carousel-3d {
+    padding: 20px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1px;
+}
+.carousel-3d > * {
+    flex: 0 0 auto;
+}
+.carousel-3d figure {
+    margin: 0;
+    width: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel-3d figure img,
+.carousel-3d figure div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+.carousel-3d figure img {
+    user-select: none;
+}
+.carousel-3d figure div:not(:first-of-type),
+.carousel-3d figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carousel-3d nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+.carousel-3d nav button {
+    flex: 0 0 auto;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #337AB7;
+    background: #BFE2FF;
+    border: 1px solid #337AB7;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+.carousel-3d nav button:hover {
+    color: #FFF;
+    background: #337AB7;
+}
+
+/*----------------Up button section starting--------------------*/
+.up_btn {
+    opacity: 0.8;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    cursor: pointer;
+    border:3px solid #BFE2FF;
+    transition: all .7s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #337AB7;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzMy45NjgsMjc4LjY1N0wyNDguMzg3LDkyLjc5Yy03LjQxOS03LjA0NC0xNi4wOC0xMC41NjYtMjUuOTc3LTEwLjU2NmMtMTAuMDg4LDAtMTguNjUyLDMuNTIxLTI1LjY5NywxMC41NjYgICBMMTAuODQ4LDI3OC42NTdDMy42MTUsMjg1Ljg4NywwLDI5NC41NDksMCwzMDQuNjM3YzAsMTAuMjgsMy42MTksMTguODQzLDEwLjg0OCwyNS42OTNsMjEuNDExLDIxLjQxMyAgIGM2Ljg1NCw3LjIzLDE1LjQyLDEwLjg1MiwyNS42OTcsMTAuODUyYzEwLjI3OCwwLDE4Ljg0Mi0zLjYyMSwyNS42OTctMTAuODUyTDIyMi40MSwyMTMuMjcxTDM2MS4xNjgsMzUxLjc0ICAgYzYuODQ4LDcuMjI4LDE1LjQxMywxMC44NTIsMjUuNywxMC44NTJjMTAuMDgyLDAsMTguNzQ3LTMuNjI0LDI1Ljk3NS0xMC44NTJsMjEuNDA5LTIxLjQxMiAgIGM3LjA0My03LjA0MywxMC41NjctMTUuNjA4LDEwLjU2Ny0yNS42OTNDNDQ0LjgxOSwyOTQuNTQ1LDQ0MS4yMDUsMjg1Ljg4NCw0MzMuOTY4LDI3OC42NTd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+}
+.up_btn:hover {
+    opacity: 1;
+    background-color: #337AB7;
+}
+
+/*----------------------header.php----------------------------*/
+/*Menu text color will change from black to gold*/
+#navbarSupportedContent a {
+    color: black; /* Замените "Black" на любой другой цвет, который вам нужен */
+}
+#navbarSupportedContent a:hover {
+    color: #579eea; /* Цвет при наведении на ссылку */
+}
+/*Logo SHUKHRATNYC.COM (Menu)*/
+.logo{
+    width: 75px;
+    height: 70px;
+    border-radius: 3px;
+}
+
+/*Website background-color*/
+body{
+    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
+    width: 100%;
+    height: 100%;
+}

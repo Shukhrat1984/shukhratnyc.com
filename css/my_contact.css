@@ -1,0 +1,200 @@
+
+/*----------------Up button section starting--------------------*/
+.up_btn {
+    opacity: 0.8;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    cursor: pointer;
+    border:3px solid #BFE2FF;
+    transition: all .7s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #337AB7;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzMy45NjgsMjc4LjY1N0wyNDguMzg3LDkyLjc5Yy03LjQxOS03LjA0NC0xNi4wOC0xMC41NjYtMjUuOTc3LTEwLjU2NmMtMTAuMDg4LDAtMTguNjUyLDMuNTIxLTI1LjY5NywxMC41NjYgICBMMTAuODQ4LDI3OC42NTdDMy42MTUsMjg1Ljg4NywwLDI5NC41NDksMCwzMDQuNjM3YzAsMTAuMjgsMy42MTksMTguODQzLDEwLjg0OCwyNS42OTNsMjEuNDExLDIxLjQxMyAgIGM2Ljg1NCw3LjIzLDE1LjQyLDEwLjg1MiwyNS42OTcsMTAuODUyYzEwLjI3OCwwLDE4Ljg0Mi0zLjYyMSwyNS42OTctMTAuODUyTDIyMi40MSwyMTMuMjcxTDM2MS4xNjgsMzUxLjc0ICAgYzYuODQ4LDcuMjI4LDE1LjQxMywxMC44NTIsMjUuNywxMC44NTJjMTAuMDgyLDAsMTguNzQ3LTMuNjI0LDI1Ljk3NS0xMC44NTJsMjEuNDA5LTIxLjQxMiAgIGM3LjA0My03LjA0MywxMC41NjctMTUuNjA4LDEwLjU2Ny0yNS42OTNDNDQ0LjgxOSwyOTQuNTQ1LDQ0MS4yMDUsMjg1Ljg4NCw0MzMuOTY4LDI3OC42NTd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+}
+.up_btn:hover {
+    opacity: 1;
+    background-color: #337AB7;
+}
+
+/*--------------Sender Contact Form section starting-------------------*/
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgba(255, 250, 250, 0.68);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+form {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: rgba(0, 122, 253, 0.82);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 180px;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/*--------------Sender Contact Form section ending-------------------*/
+
+/*--------------social-icons section starting-------------------*/
+.social-icons-3 {
+    padding: 0;
+    list-style: none;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.social-icons-3 a i {
+    font-size: 32px;
+    font-style: normal;
+    line-height: 64px;
+    transition: 0.3s;
+}
+.social-icons-3 a img {
+    width: 32px;
+    height: 32px;
+    margin-top: 16px;
+}
+.social-icons-3 a {
+    text-decoration:none;
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: #BFE2FF;
+    text-align: center;
+    margin: 0 8px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    color: #007afd;
+}
+.social-icons-3 a::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    background: rgba(177, 214, 246, 0.6);
+    height: 10%;
+    width: 100%;
+    transform: skewX(-45deg);
+    transition: 0.3s;
+}
+.social-icons-3 a::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 64px;
+    background: rgba(51, 122, 183, 0.6);
+    height: 100%;
+    width: 10%;
+    transform: skewY(-45deg);
+    transition: 0.3s;
+}
+.social-icons-3 a:hover {
+    transform: translate(-5%, 5%);
+    box-shadow: 6px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.social-icons-3 a:hover {
+    background: #337AB7;
+}
+.social-icons-3 a:hover i {
+    color: #fff;
+}
+.social-icons-3 a:hover::after {
+    background: #184e7c;
+}
+.social-icons-3 a:hover::before {
+    background: #2a70aa;
+}
+/*--------------social-icons section ending-------------------*/
+
+/*----------My Contact Phone, Email, Address section starting-------------*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgba(255, 250, 250, 0.68);
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.grid-item i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+.grid-item:hover {
+    transform: translate3d(0, -10px, 0);
+    transition: transform 0.9s ease-in-out;
+    box-shadow: #ffffff 3px 3px 3px; /*Under box's white light's*/
+}
+/*----------My Contact Phone, Email, Address section ending-------------*/
+
+/*----------------------header.php----------------------------*/
+/*Menu text color will change from black to gold*/
+#navbarSupportedContent a {
+    color: black; /* Замените "Black" на любой другой цвет, который вам нужен */
+}
+#navbarSupportedContent a:hover {
+    color: #579eea; /* Цвет при наведении на ссылку */
+}
+
+/*Logo SHUKHRATNYC.COM (Menu)*/
+.logo{
+    width: 75px;
+    height: 70px;
+    border-radius: 3px;
+}
+
+/*Website background-color*/
+body{
+    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
+    width: 100%;
+    height: 100%;
+}

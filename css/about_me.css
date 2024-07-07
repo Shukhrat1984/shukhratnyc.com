@@ -1,0 +1,562 @@
+
+
+/*--------------------About social media section starting---------------------*/
+.contact-container * {
+    box-sizing: content-box;
+}
+.contact-container {
+    position: fixed;
+    right: 0;
+    z-index: 99999999;
+    bottom: 80px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+}
+.contact-container.visible {
+    transform: translateX(-10px);
+}
+.contact {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    border: 5px solid #337AB7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    position: relative;
+    height: 110px;
+    width: 350px;
+    max-width: calc(100% - 10px);
+}
+.contact span.close-btn {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.contact span.close-btn svg {
+    stroke: #337AB7;
+    width: 20px;
+    height: 20px;
+}
+.contact span.close-btn:focus {
+    outline: none;
+}
+.contact div {
+    background-color: #337AB7;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 18px;
+    padding: 2px 0 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 280px;
+}
+.contact ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact ul li {
+    margin: 24px 6px 0 6px;
+}
+.contact ul li a {
+    border: 4px solid #BFE2FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    font-size: 24px;
+    color: #337AB7;
+    width: 48px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.contact ul li a:hover {
+    border-color: #337AB7;
+    color: #000;
+    box-shadow: 0 9px 12px -9px #337AB7;
+}
+.contact-btn {
+    border-radius: 30px;
+    background-color: #337AB7;
+    border: 2px solid #337AB7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 99999999;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+.contact-btn:hover {
+    background-color: #ffffff;
+    color: #337AB7;
+}
+.contact-btn:focus {
+    outline: none;
+}
+@media screen and (max-width: 480px) {
+    .contact-container.visible {
+        transform: translateX(0px);
+    }
+    .contact-btn {
+        right: 10px;
+    }
+}
+
+/*-----------------------Up button section starting--------------------------*/
+.up_btn {
+    opacity: 0.8;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    cursor: pointer;
+    border:3px solid #BFE2FF;
+    transition: all .7s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #337AB7;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzMy45NjgsMjc4LjY1N0wyNDguMzg3LDkyLjc5Yy03LjQxOS03LjA0NC0xNi4wOC0xMC41NjYtMjUuOTc3LTEwLjU2NmMtMTAuMDg4LDAtMTguNjUyLDMuNTIxLTI1LjY5NywxMC41NjYgICBMMTAuODQ4LDI3OC42NTdDMy42MTUsMjg1Ljg4NywwLDI5NC41NDksMCwzMDQuNjM3YzAsMTAuMjgsMy42MTksMTguODQzLDEwLjg0OCwyNS42OTNsMjEuNDExLDIxLjQxMyAgIGM2Ljg1NCw3LjIzLDE1LjQyLDEwLjg1MiwyNS42OTcsMTAuODUyYzEwLjI3OCwwLDE4Ljg0Mi0zLjYyMSwyNS42OTctMTAuODUyTDIyMi40MSwyMTMuMjcxTDM2MS4xNjgsMzUxLjc0ICAgYzYuODQ4LDcuMjI4LDE1LjQxMywxMC44NTIsMjUuNywxMC44NTJjMTAuMDgyLDAsMTguNzQ3LTMuNjI0LDI1Ljk3NS0xMC44NTJsMjEuNDA5LTIxLjQxMiAgIGM3LjA0My03LjA0MywxMC41NjctMTUuNjA4LDEwLjU2Ny0yNS42OTNDNDQ0LjgxOSwyOTQuNTQ1LDQ0MS4yMDUsMjg1Ljg4NCw0MzMuOTY4LDI3OC42NTd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+}
+.up_btn:hover {
+    opacity: 1;
+    background-color: #337AB7;
+}
+
+/*-------------------CORNERS AND FRAMES section starting---------------------*/
+.corner-box-7 *  {
+    box-sizing:content-box;
+}
+.corner-box-7 {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.corner-textbox-7 {
+    padding:20px;
+}
+.corner-frame-7-top {
+    top: 0px;
+    left: 3px;
+    width: calc(100% - 46px);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #BFE2FF;
+    position: absolute;
+}
+.corner-frame-7-left {
+    top: 3px;
+    left: 0px;
+    width: 0px;
+    height: calc(100% - 46px);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #BFE2FF;
+    position: absolute;
+}
+.corner-frame-7-bottom {
+    bottom: 0;
+    left: 3px;
+    width: calc(100% - 46px);
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #BFE2FF;
+    position: absolute;
+}
+.corner-frame-7-right {
+    right: 0;
+    top: 3px;
+    width: 0px;
+    height: calc(100% - 46px);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #3379b7;
+    position: absolute;
+}
+
+/*------------------------About my heartbeat-2 section------------------------*/
+.heartbeat-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.heartbeat-2 svg {
+    stroke: #337AB7;
+    stroke-width: 2px;
+    fill: none;
+    stroke-dasharray: 150, 200;
+    stroke-dashoffset: 0;
+    animation: heartbeat-2 10s infinite linear;
+}
+@keyframes heartbeat-2 {
+    to {
+        stroke-dashoffset: 1050;
+    }
+}
+
+/*---------------------------About my work section----------------------------*/
+.icon-overlay2 {
+    position: absolute;
+    top: 85%;
+    right: 25%;
+    /*transform: translate(-50%, -50%);*/
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    /*z-index: 1; /* Чтобы текст был выше изображения */
+}
+#right-img{
+    width: 95%;
+    height: 95%;
+    margin-top: 0; /* Сдвигаем изображение вверх на 10px */
+    margin-left: 0; /* Сдвигаем изображение влево на 20px-30px-40px */
+    transition: transform 0.6s ease-in-out;
+}
+.ramka-7 {
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+    position: relative;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    /*box-shadow: inset 6px 6px 8px 0 rgba(0,0,0,0.4);*/
+}
+.ramka-7:after,
+.ramka-7:before {
+    mix-blend-mode:multiply;
+    filter:none;
+    z-index: -1;
+    content:'';
+    width: calc(100% + 90px);
+    height: calc(100% + 90px);
+    position: absolute;
+    animation: anim-ramka-7 8s ease-in-out infinite;
+}
+@keyframes anim-ramka-7 {
+    0%, 100% {
+        clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+    }
+    50% {
+        clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+    }
+}
+.ramka-7:after{
+    animation-delay: -5s;
+    background-color: #BFE2FF;
+    clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+}
+.ramka-7:before {
+    background-color: #337AB7;
+    clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+}
+.ramka-7:hover:before,
+.ramka-7:hover:after {
+    animation-play-state: paused;
+}
+#work-text{
+    background-color: rgba(245, 245, 245, 0.23);
+    border: white solid 3px;
+    border-radius: 5px;
+    box-shadow: black 0px 0px 5px 0px;
+}
+
+/*--------------------------About my percentages section--------------------------*/
+.pie {
+    --p: 20;
+    --b: 7px;
+    --w: 120px;
+    --c: #337AB7;
+    --f: #eee;
+
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin-top: 30px;
+    margin-left: 75px;
+    margin-bottom: 35px;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+.pie:before,
+.pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+.pie:before {
+    inset: 0;
+    background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p) * 1%), var(--f) 0);
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+.pie:after {
+    inset: calc(50% - var(--b) / 2);
+    background: var(--c);
+    transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+.no-round:before {
+    background-size:0 0,auto;
+}
+.no-round:after {
+    content:none;
+}
+/* Animation */
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+.pieanimate {
+    animation: p 1s .5s both;
+}
+@keyframes p {
+    from{--p:0}
+}
+.container-percentages p{
+    font-size: 15px;
+    font-style: initial;
+    color: #16181a;
+    text-align: center;
+}
+
+/*--------------------------About my brain section-------------------------------*/
+.brain {
+    text-align: center;
+}
+.col-3 h5{
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.col-4 h5{
+    text-align: right;
+    margin-top: 150px;
+    /*margin-right: 30px;*/
+}
+.brain svg {
+    height: 300px;
+    margin-top: 40px;
+}
+@media screen and (max-width:767px) {
+    .brain svg {
+        height: 200px;
+    }
+}
+.brain path {
+    fill: transparent;
+}
+.brain .animatePaths {
+    animation: goPath 3000ms alternate infinite;
+    stroke: #337AB7;
+    stroke-width: 2;
+}
+.brain .animateCircles {
+    animation: goCircle 3000ms alternate infinite;
+    stroke: #1b7fd6;
+    fill: #1b7fd6;
+}
+.brain .animateEllipse {
+    animation: goCircle 3000ms alternate infinite;
+    stroke: #1b7fd6;
+    fill: #1b7fd6;
+}
+.brain .animateRects {
+    animation: goRect 3000ms alternate infinite;
+    stroke: #1181e4;
+    fill: #1181e4;
+}
+@keyframes goPath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes goRect {
+    to {
+        opacity:0;
+    }
+}
+@keyframes goCircle {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+/*--------------------------About my studies section-------------------------------*/
+.icon-overlay {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    /*transform: translate(-50%, -50%);*/
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    /*z-index: 1; /* Чтобы текст был выше изображения */
+}
+#left-img{
+    width: 95%;
+    height: 95%;
+    margin-top: 0; /* Сдвигаем изображение вверх на 10px */
+    margin-left: 0; /* Сдвигаем изображение влево на 20px-30px-40px */
+    transition: transform 0.6s ease-in-out;
+}
+.ramka-7 {
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+    position: relative;
+    margin: 160px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    /*box-shadow: inset 6px 6px 8px 0 rgba(0,0,0,0.4);*/
+}
+.ramka-7:after,
+.ramka-7:before {
+    mix-blend-mode:multiply;
+    filter:none;
+    z-index: -1;
+    content:'';
+    width: calc(100% + 90px);
+    height: calc(100% + 90px);
+    position: absolute;
+    animation: anim-ramka-7 8s ease-in-out infinite;
+}
+@keyframes anim-ramka-7 {
+    0%, 100% {
+        clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+    }
+    50% {
+        clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+    }
+}
+.ramka-7:after{
+    animation-delay: -5s;
+    background-color: #BFE2FF;
+    clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+}
+.ramka-7:before {
+    background-color: #337AB7;
+    clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+}
+.ramka-7:hover:before,
+.ramka-7:hover:after {
+    animation-play-state: paused;
+}
+#studies-text{
+    background-color: rgba(245, 245, 245, 0.23);
+    border: white solid 3px;
+    border-radius: 5px;
+    box-shadow: black 0px 0px 5px 0px;
+}
+
+/*--------------------------My Family section-------------------------------*/
+.image-caption {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: rgba(255, 255, 255, 0.3); /* Прозрачный фон для текста */
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+#page-1{
+    text-align: center;
+}
+.img_page{
+    width: 100%;
+    height: 90%;
+    margin-top: -55px;
+}
+
+/*------------------------Header (Menu) section-----------------------------*/
+.header>h1 {
+    font-size: 20px;
+    padding: 2rem 0;
+    margin-left: 10px;
+}
+.page {
+    height: 100vh;
+    /*background: linear-gradient(to right, rgba(99, 134, 243, 0.8), white, rgba(80, 80, 207, 0.82));*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar {
+    height: 0.6rem; /*Line scrolling we can change as we want 0.5rem*/
+    width: 0;
+    margin-top: -8px;
+    position: fixed;
+    background-color: rgba(32, 75, 218, 0.82);
+}
+/*Menu text color will change from black to gold*/
+#navbarSupportedContent a {
+    color: black; /* Замените "Black" на любой другой цвет, который вам нужен */
+}
+#navbarSupportedContent a:hover {
+    color: #579eea; /* Цвет при наведении на ссылку */
+}
+/*Logo SHUKHRATNYC.COM (Menu)*/
+/*Logo SHUKHRATNYC.COM (Menu)*/
+.logo{
+    width: 75px;
+    height: 70px;
+    border-radius: 3px;
+}
+
+/*Website background-color*/
+body{
+    /*
+    background: linear-gradient(to right, rgba(99, 134, 243, 0.8), white, rgba(80, 80, 207, 0.82));
+    */
+    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,105 @@
+
+/*----------------Up button section starting--------------------*/
+.upbtn {
+    opacity: 0.8;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    cursor: pointer;
+    border:3px solid #BFE2FF;
+    transition: all .7s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #337AB7;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzMy45NjgsMjc4LjY1N0wyNDguMzg3LDkyLjc5Yy03LjQxOS03LjA0NC0xNi4wOC0xMC41NjYtMjUuOTc3LTEwLjU2NmMtMTAuMDg4LDAtMTguNjUyLDMuNTIxLTI1LjY5NywxMC41NjYgICBMMTAuODQ4LDI3OC42NTdDMy42MTUsMjg1Ljg4NywwLDI5NC41NDksMCwzMDQuNjM3YzAsMTAuMjgsMy42MTksMTguODQzLDEwLjg0OCwyNS42OTNsMjEuNDExLDIxLjQxMyAgIGM2Ljg1NCw3LjIzLDE1LjQyLDEwLjg1MiwyNS42OTcsMTAuODUyYzEwLjI3OCwwLDE4Ljg0Mi0zLjYyMSwyNS42OTctMTAuODUyTDIyMi40MSwyMTMuMjcxTDM2MS4xNjgsMzUxLjc0ICAgYzYuODQ4LDcuMjI4LDE1LjQxMywxMC44NTIsMjUuNywxMC44NTJjMTAuMDgyLDAsMTguNzQ3LTMuNjI0LDI1Ljk3NS0xMC44NTJsMjEuNDA5LTIxLjQxMiAgIGM3LjA0My03LjA0MywxMC41NjctMTUuNjA4LDEwLjU2Ny0yNS42OTNDNDQ0LjgxOSwyOTQuNTQ1LDQ0MS4yMDUsMjg1Ljg4NCw0MzMuOTY4LDI3OC42NTd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+}
+.upbtn:hover {
+    opacity: 1;
+    background-color: #337AB7;
+}
+
+/*------------------Cube preload section starting-------------------------------*/
+.preloader-4 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 2px;
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+}
+.preloader-4 > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #337AB7;
+    transform: scale(0);
+    transform-origin: center center;
+    animation: preloader-4-anim 2s infinite linear;
+}
+.preloader-4 > div:nth-of-type(1),
+.preloader-4 > div:nth-of-type(5),
+.preloader-4 > div:nth-of-type(9) {
+    animation-delay: 0.4s;
+}
+.preloader-4 > div:nth-of-type(4),
+.preloader-4 > div:nth-of-type(8) {
+    animation-delay: 0.2s;
+}
+.preloader-4 > div:nth-of-type(2),
+.preloader-4 > div:nth-of-type(6) {
+    animation-delay: 0.6s;
+}
+.preloader-4 > div:nth-of-type(3) {
+    animation-delay: 0.8s;
+}
+@keyframes preloader-4-anim {
+    0% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+/*--------------Movies img & card information section starting-----------------*/
+.card-body{
+    background-color: #eff5fa; rgb(231,240,248) hsl(208,55%,94%);
+    max-height: 150px; /* Устанавливаем максимальную высоту */
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+}
+.card-img-top:hover{
+    transform: scale(0.9);
+    transition: transform 0.9s ease-in-out;
+}
+
+/*----------------------header.php----------------------------*/
+/*Menu text color will change from black to gold*/
+#navbarSupportedContent a {
+    color: black; /* Замените "Black" на любой другой цвет, который вам нужен */
+}
+#navbarSupportedContent a:hover {
+    color: #579eea; /* Цвет при наведении на ссылку */
+}
+/*Logo SHUKHRATNYC.COM (Menu)*/
+.logo{
+    width: 75px;
+    height: 70px;
+    border-radius: 3px;
+}
+
+/*Website background-color*/
+body{
+    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,63 @@
+
+
+
+/*---------------------------------------------------------------------------*/
+
+.container1,.container2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: relative; /* added for text-overlay positioning */
+}
+.box {
+    margin: 5px;
+    position: relative;
+}
+.box img {
+    width: 200px;
+    height: 200px;
+}
+.box:hover {
+    transform: scale(0.9);
+    transition: transform 0.9s ease-in-out;
+}
+.text-overlay {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: snow;
+    font-size: 15px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+.text-overlay svg {
+    margin-right: 10px;
+    color: #0870ca;
+}
+
+/*----------------------header.php----------------------------*/
+/*Menu text color will change from black to gold*/
+#navbarSupportedContent a {
+    color: black; /* Замените "Black" на любой другой цвет, который вам нужен */
+}
+#navbarSupportedContent a:hover {
+    color: #579eea; /* Цвет при наведении на ссылку */
+}
+
+/*Logo SHUKHRATNYC.COM (Menu)*/
+.logo{
+    width: 75px;
+    height: 70px;
+    border-radius: 3px;
+}
+
+/*Website background-color*/
+body{
+    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
+    width: 100%;
+    height: 100%;
+}
