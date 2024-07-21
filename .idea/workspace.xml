@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="566f58f4-f896-4459-af0e-aa7caea9423c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -351,6 +346,10 @@
       <workItem from="1720409620108" duration="2077000" />
       <workItem from="1721184320656" duration="25000" />
       <workItem from="1721184373394" duration="615000" />
+      <workItem from="1721574164998" duration="1810000" />
+      <workItem from="1721576869163" duration="22000" />
+      <workItem from="1721584421215" duration="637000" />
+      <workItem from="1721585104137" duration="1194000" />
     </task>
     <servers />
   </component>
