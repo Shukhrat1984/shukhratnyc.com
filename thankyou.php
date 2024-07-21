@@ -24,5 +24,10 @@
     <?php endif;?>
     <h6><a href="https://shukhratnyc.com/">Click here to go back home.</a></h6>
 </div>
+<style>
+    .container{
+        text-align: center;
+    }
+</style>
 </body>
 </html>
