@@ -1,3 +1,0 @@
-[07-Jul-2024 10:04:09 America/Chicago] PHP Warning:  Undefined array key "REQUEST_METHOD" in /home4/nycsoare/public_html/shukhratnyc.com/mail.php on line 12
-[07-Jul-2024 10:33:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/nycsoare/public_html/shukhratnyc.com/mail.php:38) in /home4/nycsoare/public_html/shukhratnyc.com/mail.php on line 39
-[07-Jul-2024 10:33:54 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/nycsoare/public_html/shukhratnyc.com/mail.php:38) in /home4/nycsoare/public_html/shukhratnyc.com/mail.php on line 39

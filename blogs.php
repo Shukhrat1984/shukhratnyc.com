@@ -30,7 +30,7 @@
     <div class="row row-cols-1 row-cols-md-2 g-12" style="margin-top: 100px; ">
         <div class="col">
             <div class="card">
-                <img src="./img-blog/img-blog1.jpg" class="card-img-top" alt="...">
+                <img src="blog_img/img-blog1.jpg" class="card-img-top" alt="...">
 
                 <div class="card-body">
                     <h5 class="card-title">Front-end v back-end development: What you need to know</h5>
@@ -42,7 +42,7 @@
 
         <div class="col">
             <div class="card">
-                <img src="./img-blog/img-blog1.jpg" class="card-img-top" alt="...">
+                <img src="blog_img/img-blog1.jpg" class="card-img-top" alt="...">
 
                 <div class="card-body">
                     <h5 class="card-title">Front-end v back-end development: What you need to know</h5>
@@ -54,7 +54,7 @@
 
         <div class="col">
             <div class="card">
-                <img src="./img-blog/img-blog1.jpg" class="card-img-top" alt="...">
+                <img src="blog_img/img-blog1.jpg" class="card-img-top" alt="...">
 
                 <div class="card-body">
                     <h5 class="card-title">Front-end v back-end development: What you need to know</h5>
@@ -66,7 +66,7 @@
 
         <div class="col">
             <div class="card">
-                <img src="./img-blog/img-blog1.jpg" class="card-img-top" alt="...">
+                <img src="blog_img/img-blog1.jpg" class="card-img-top" alt="...">
 
                 <div class="card-body">
                     <h5 class="card-title">Front-end v back-end development: What you need to know</h5>

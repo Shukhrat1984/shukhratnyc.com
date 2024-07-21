@@ -39,6 +39,9 @@ if ($keyword){
                         <li><a class="dropdown-item" href="music.php">MUSIC</a></li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogs.php">BLOG</a>
+                </li>
                 <!--------------------------Resume section starting----------------------->
                 <li class="nav-item">
                     <a class="nav-link" download="My Resume" href="./img1/resumeio.pdf">RESUME</a>
