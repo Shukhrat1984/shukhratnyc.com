@@ -11,7 +11,7 @@ if ($keyword){
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: snow; width: 100%; border-radius: 3px; border: 4px solid #BFE2FF;">
     <div class="container-fluid">
         <a class="logo-brand" href="logos.php">
-            <img class="logo" style="width: 120px; height: 110px; border-radius: 3px;" src="logo_img/shukhratnyc.com11.jpg" alt="" >
+            <img class="logo" style="width: 100px; height: 90px; border-radius: 3px;" src="logo_img/shukhratnyc.com11.jpg" alt="" >
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,31 +20,31 @@ if ($keyword){
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
+                    <a class="nav-link active" aria-current="page" href="index.php" style="font-size: large">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about_me.php">ABOUT ME</a>
+                    <a class="nav-link" href="about_me.php" style="font-size: large">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="my_contact.php">CONTACT</a>
+                    <a class="nav-link" href="my_contact.php" style="font-size: large">CONTACT</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: large">
                         MY HOBBIES
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="cars.php">CARS</a></li>
-                        <li><a class="dropdown-item" href="movie.php">MOVIES</a></li>
+                        <li><a class="dropdown-item" href="cars.php" style="font-size: large">CARS</a></li>
+                        <li><a class="dropdown-item" href="movie.php" style="font-size: large">MOVIES</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="music.php">MUSIC</a></li>
+                        <li><a class="dropdown-item" href="music.php" style="font-size: large">MUSIC</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blogs.php">BLOGS</a>
+                    <a class="nav-link" href="blogs.php" style="font-size: large">BLOGS</a>
                 </li>
                 <!--------------------------Resume section starting----------------------->
                 <li class="nav-item">
-                    <a class="nav-link" download="My Resume" href="./img1/resumeio.pdf">RESUME</a>
+                    <a class="nav-link" download="My Resume" href="./img1/resumeio.pdf" style="font-size: large">RESUME</a>
                 </li>
                 <!---------------------------Resume section ending------------------------>
             </ul>

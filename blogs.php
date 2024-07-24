@@ -6,13 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/jpg" href="logo_img/shukhratnyc.com8.jpg">
-    <title>CLOUD</title>
+    <title>BLOGS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="css/blogs.css">
 </head>
 <body>
+<!--Container-header section starting-->
     <div class="container-header">
         <div class="container-menu">
             <ul class="navmenu_2">
@@ -26,8 +27,9 @@
             </ul>
         </div>
     </div>
-
-    <div class="row row-cols-1 row-cols-md-2 g-12" style="margin-top: 100px; ">
+<!--Container-header section ending-->
+<!--Blogs section starting-->
+    <div class="row row-cols-1 row-cols-md-2 g-12" style="margin-top: 350px; ">
         <div class="col">
             <div class="card">
                 <img src="blog_img/img-blog1.jpg" class="card-img-top" alt="...">
@@ -42,12 +44,12 @@
 
         <div class="col">
             <div class="card">
-                <img src="blog_img/img-blog1.jpg" class="card-img-top" alt="...">
+                <img src="blog_img/img-blog2.jpg" class="card-img-top" alt="...">
 
                 <div class="card-body">
-                    <h5 class="card-title">Front-end v back-end development: What you need to know</h5>
-                    <p class="card-text">Confused by what front-end and back-end developers do? Here is a guide that tells you the skills you need for both.</p>
-                    <a href="https://www.siliconrepublic.com/advice/front-end-vs-back-end-development-skills" class="btn btn-outline-secondary">Details</a>
+                    <h5 class="card-title">User interface (UI)</h5>
+                    <p class="card-text">What is a user interface (UI)?</p>
+                    <a href="https:https://www.techtarget.com/searchapparchitecture/definition/user-interface-UI" class="btn btn-outline-secondary">Details</a>
                 </div>
             </div>
         </div>
@@ -76,6 +78,7 @@
             </div>
         </div>
     </div>
+<!--Blogs section ending-->
 
     <div class="container-footer">
         <h5 style="color: whitesmoke;">Hello World</h5>
