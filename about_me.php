@@ -28,13 +28,9 @@ if ($source === 'index') {
     <link rel="stylesheet" href="css/about_me.css">
 </head>
 <body>
-    <!--Header section starting-->
-    <div class="header">
-        <header><?php include "header.php" ?></header>
-        <h1>Frontend Portal</h1>
-        <div id="progress-bar" class="progress-bar"></div>
-    </div>
-    <!--Header section ending-->
+<!-- Header link starting-->
+<?php include "navbar.php" ?>
+<!-- Header link ending -->
     <div class="content">
         <!--My Family section starting-->
         <div class="page" id="page-1">

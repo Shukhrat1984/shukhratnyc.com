@@ -721,13 +721,6 @@ span.bubble {
     color: #579eea; /* Цвет при наведении на ссылку */
 }
 
-/*Logo SHUKHRATNYC.COM (Menu)*/
-.logo{
-    width: 75px;
-    height: 70px;
-    border-radius: 3px;
-}
-
 /*Website background-color*/
 body{
     background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);

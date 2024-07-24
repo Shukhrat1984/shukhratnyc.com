@@ -8,10 +8,10 @@ if ($keyword){
 ?>
 <!-- Google search (Menu) ending-->
 <!-- Header (Menu) section starting-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: snow; width: 100%; border-radius: 3px; border: 4px solid #BFE2FF;">
     <div class="container-fluid">
         <a class="logo-brand" href="logos.php">
-            <img class="logo" src="logo_img/shukhratnyc.com8.jpg" alt="">
+            <img class="logo" style="width: 120px; height: 110px; border-radius: 3px;" src="logo_img/shukhratnyc.com11.jpg" alt="" >
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@ if ($keyword){
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blogs.php">BLOG</a>
+                    <a class="nav-link" href="blogs.php">BLOGS</a>
                 </li>
                 <!--------------------------Resume section starting----------------------->
                 <li class="nav-item">

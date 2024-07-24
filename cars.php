@@ -28,11 +28,8 @@ if ($source === 'index') {
 </head>
 <body>
 <!-- Header link starting-->
-<div class="header">
-    <header><?php include "header.php" ?></header>
-</div>
+<?php include "navbar.php" ?>
 <!-- Header link ending -->
-
 <div class="container-fluid">
     <!--I LOVE CARS text section starting-->
     <div class="block-figure-2">

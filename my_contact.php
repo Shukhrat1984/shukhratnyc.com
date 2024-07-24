@@ -23,9 +23,9 @@ if ($source === 'index') {
     <link rel="stylesheet" href="css/my_contact.css">
 </head>
 <body>
-<div class="header">
-    <header><?php include "header.php" ?></header>
-</div>
+<!-- Header link starting-->
+<?php include "navbar.php" ?>
+<!-- Header link ending -->
 <!--My Contact Phone, Email, Address section starting-->
 <div class="grid-container">
     <div class="grid-item">

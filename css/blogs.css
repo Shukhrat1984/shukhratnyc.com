@@ -60,7 +60,7 @@
     transform: scale(0.9);
 }
 .container-header, body{
-    background-image: url(../img1/office.jpg);
+    background-image: url(../blog_img/office.jpg);
     height: 400px;
     margin: 0 ;
     background-position: center;
