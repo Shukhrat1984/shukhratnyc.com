@@ -1,10 +1,20 @@
 //alert("Hello world");
 
-//-------------------------------------------------------------------
-
-//-------------------------------------------------------------------
-
-
+//-----------------ANIMATED TRANSITION BETWEEN PAGES section starting------------------
+$(window).on('load pageshow', function () {
+    $('.preloader').removeClass("off");
+    $('.preloader').addClass("on");
+});
+$("a:not([href*=javascript]):not([href*=\\#]):not(.fancybox):not([target]):not([data-fancybox])").click(function() {
+    $('.preloader').removeClass("on");
+    $('.preloader').addClass("off");
+    let url = $(this).attr('href');
+    window.setTimeout(function() {
+        window.location.href = url;
+    }, 550);
+    return false;
+});
+//----------------ANIMATED TRANSITION BETWEEN PAGES section starting---------------------
 //---------------------------------Menu section starting---------------------------------
 $(".navmenu_2 a").on("click", function() {
     let position = $(this)
@@ -41,4 +51,4 @@ let currentWidth = $(".navmenu_2")
     .width();
 let current = $(".navmenu_2 .active").position();
 $(".navmenu_2 .slide1").css({ left: +current.left, width: currentWidth });
-//---------------------------------Menu section ending---------------------------------
+//---------------------------------Menu section ending-----------------------------------

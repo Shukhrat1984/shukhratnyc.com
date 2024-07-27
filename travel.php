@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="css/travel.css">
 </head>
 <body>
+<!--ANIMATED TRANSITION BETWEEN PAGES section starting-->
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<!--ANIMATED TRANSITION BETWEEN PAGES section starting-->
 <!--Menu section starting-->
     <div class="container-header">
         <div class="container-menu">
@@ -29,58 +42,46 @@
         </div>
     </div>
 <!--Menu section ending-->
-<!--Blogs section starting-->
-    <div class="row row-cols-1 row-cols-md-2 g-12" style="margin-top: 350px; ">
-        <div class="col">
-            <div class="card">
-                <img src="blog_img/img-blog1.jpg" class="card-img-top" alt="...">
-
-                <div class="card-body">
-                    <h5 class="card-title">Front-end v back-end development: What you need to know</h5>
-                    <p class="card-text">Confused by what front-end and back-end developers do? Here is a guide that tells you the skills you need for both.</p>
-                    <a href="https://www.siliconrepublic.com/advice/front-end-vs-back-end-development-skills" class="btn btn-outline-secondary">Details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="blog_img/img-blog2.jpg" class="card-img-top" alt="...">
-
-                <div class="card-body">
-                    <h5 class="card-title">Have U got X and I mixed up? The difference between UX and UI</h5>
-                    <p class="card-text">Developers and designers shouldn’t get caught up in how a job title encompasses UX or UI, says Jasaon Kelly of Hays. Rather, they should look to the job specification and match their skills to the software requirements.</p>
-                    <a href="https://www.siliconrepublic.com/advice/difference-ux-ui" class="btn btn-outline-secondary">Details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="blog_img/img-blog3.jpg" class="card-img-top" alt="...">
-
-                <div class="card-body">
-                    <h5 class="card-title">Amethyst Care: AI assistant to help older people live at home for longer</h5>
-                    <p class="card-text">Based in the SFI Adapt research centre at Trinity, Amethyst Care is led by Rebecca McManus and Prof Vinny Wade.</p>
-                    <a href="https://www.siliconrepublic.com/start-ups/amethyst-care-ai-voice-assistant-healthcare-rebecca-mcmanus-vinny-wade-adapt" class="btn btn-outline-secondary">Details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="blog_img/img-blog4.jpg" class="card-img-top" alt="...">
-
-                <div class="card-body">
-                    <h5 class="card-title">8 great alternatives to ChatGPT for workers</h5>
-                    <p class="card-text">ChatGPT is good, but there are a lot of other similar tools workers can use that perhaps aren’t as well known as OpenAI’s beast. Here are just a few.</p>
-                    <a href="https://www.siliconrepublic.com/advice/alternatives-chatgpt-for-workers" class="btn btn-outline-secondary">Details</a>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--Blogs section ending-->
-
+<!--Travel section starting-->
+    <h1 style="margin-top: 400px; margin-bottom: 30px; text-align: center;">THE JOURNEY</h1>
+    <hr>
+    <h2 style="margin-top: 20px; margin-bottom: 20px; text-align: center; color: #4e4ee1;">MALDIVES</h2>
+    <div class="fix-bg" style="background-image: url(./travel_img/maldives1.jpg)"></div>
+        <h3 style="text-align: center;">The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands,
+        is a country and archipelagic state in South Asia in the Indian Ocean. The Maldives is southwest
+        of Sri Lanka and India, about 750 kilometres (470 miles; 400 nautical miles) from the Asian continent's
+        mainland. The Maldives' chain of 26 atolls stretches across the equator from Ihavandhippolhu Atoll in the
+        north to Addu Atoll in the south.</h3>
+    <div class="fix-bg" style="background-image: url(./travel_img/maldives2.jpg)"></div>
+        <h3 style="text-align: center;">The Maldives is the smallest country in Asia. Including the sea,
+        the territory spans roughly 90,000 square kilometres (35,000 sq mi), with a land area of 298 square kilometres
+        (115 sq mi). The Maldives is one of the world's most geographically dispersed sovereign states, and the smallest
+        Muslim-majority country by land area. With a population of 515,132 in the 2022 census, it is the 2nd least
+        populous country in Asia and the ninth-smallest country in the world by area. Malé is the capital and the most
+        populated city, traditionally called the "King's Island", where the ancient royal dynasties ruled from its
+        central location. The Maldivian Archipelago is located on the Chagos–Laccadive Ridge, a vast submarine
+        mountain range in the Indian Ocean; this also forms a terrestrial ecoregion with the Chagos Archipelago and
+        Lakshadweep. The Maldives has an average ground-level elevation of 1.5 metres (4 ft 11 in) above sea level,
+        and a highest natural point of only 2.4 metres (7 ft 10 in), making it the world's lowest-lying country.
+        Some sources state the highest point, Mount Villingili, as 5.1 metres or 17 feet.</h3>
+    <div class="fix-bg" style="background-image: url(./travel_img/maldives3.jpg)"></div>
+        <h3 style="text-align: center;">The Maldives is a member of the United Nations, the Commonwealth
+        of Nations, the Organisation of Islamic Cooperation, and the Non-Aligned Movement. The World Bank classifies
+        the Maldives as having an upper-middle income economy. The Maldives is a Dialogue Partner of the
+        Shanghai Cooperation Organisation. Fishing has historically been the dominant economic activity,
+        and remains the largest sector by far, followed by the rapidly growing tourism industry.
+        The Maldives rates "high" on the Human Development Index, with per capita income significantly higher
+        than other SAARC nations. The Maldives was a member of the Commonwealth of Nations from July 1982 until
+        withdrawing from the organisation in October 2016 in protest of allegations by other nations of its human
+        rights abuses and failing democracy. The Maldives rejoined the Commonwealth on 1 February 2020 after
+        showing evidence of functioning democratic processes and popular support.</h3>
+    <div class="fix-bg" style="background-image: url(./travel_img/maldives4.jpg)"></div>
+        <h3 style="text-align: center;">The wildlife of the Maldives includes the flora and fauna of the
+        islands, reefs, and the surrounding ocean. Recent scientific studies suggest that the fauna varies greatly
+        between atolls following a north–south gradient, but important differences between neighbouring atolls w
+        ere also found (especially in terms of sea animals), which may be linked to differences in fishing pressure
+        — including poaching.</h3>
+<!--Travel section ending-->
     <div class="container-footer">
         <p style="color: black; text-align: center">shukhratnyc.com</p>
     </div>

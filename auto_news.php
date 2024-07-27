@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="css/auto_news.css">
 </head>
 <body>
+<!--ANIMATED TRANSITION BETWEEN PAGES section starting-->
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<!--ANIMATED TRANSITION BETWEEN PAGES section starting-->
 <!--Menu section starting-->
     <div class="container-header">
         <div class="container-menu">
@@ -21,9 +34,9 @@
                 <li class="slide2"></li>
                 <li><a class="active" href="blogs.php">BLOGS</a></li>
                 <li><a href="it.php">IT</a></li>
-                <li><a href="#link">AUTO NEWS</a></li>
-                <li><a href="#link">FASHION</a></li>
-                <li><a href="#link">TRAVEL</a></li>
+                <li><a href="auto_news.php">AUTO NEWS</a></li>
+                <li><a href="fashion.php">FASHION</a></li>
+                <li><a href="travel.php">TRAVEL</a></li>
                 <li><a href="index.php">HOME</a></li>
             </ul>
         </div>

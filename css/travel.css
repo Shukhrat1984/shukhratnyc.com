@@ -1,4 +1,71 @@
 
+/*---------------------ANIMATED TRANSITION BETWEEN PAGES section starting-----------------------*/
+.preloader {
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.preloader span {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #FFF;
+    transition: 0.4s;
+}
+.preloader span:nth-child(2) {
+    transition-delay: 0.05s;
+}
+.preloader span:nth-child(3) {
+    transition-delay: 0.1s;
+}
+.preloader span:nth-child(4) {
+    transition-delay: 0.15s;
+}
+.preloader span:nth-child(5) {
+    transition-delay: 0.2s;
+}
+.preloader span:nth-child(6) {
+    transition-delay: 0.25s;
+}
+.preloader span:nth-child(7) {
+    transition-delay: 0.3s;
+}
+.preloader span:nth-child(8) {
+    transition-delay: 0.35s;
+}
+.preloader span:nth-child(9) {
+    transition-delay: 0.4s;
+}
+.preloader.on {
+    visibility: hidden;
+}
+.preloader.on span {
+    opacity: 0;
+}
+.preloader.off span  {
+    opacity: 1;
+}
+
+/*----------------------------------Travel section starting-----------------------------------*/
+.fix-bg {
+    height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    /*margin-top: 80px;*/
+}
+@media (max-width: 767px) {
+    .fix-bg {
+        background-attachment: scroll;
+        height: 320px;
+    }
+}
 
 /*----------------------------Menu section starting----------------------------*/
 .container-menu{
