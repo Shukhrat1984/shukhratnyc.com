@@ -1,0 +1,62 @@
+
+
+/*----------------------------Menu section starting----------------------------*/
+.container-menu{
+    text-align: center;
+}
+.navmenu_2 {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.11);
+    position: relative;
+    list-style: none;
+    padding: 10px 20px;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 20px 0 40px 0;
+    border-radius: 40px;
+    box-shadow: 10px 20px 30px #00000044;
+    border: 4px solid rgb(255, 255, 255);
+}
+.navmenu_2 li a {
+    position: relative;
+    padding: 10px 34px;
+    font-size: 20px;
+    line-height: 1.4;
+    border: none;
+    color: snow;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 3;
+}
+.navmenu_2 .slide1,
+.navmenu_2 .slide2 {
+    position: absolute;
+    display: inline-block;
+    height: 48px;
+    border-radius:30px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1.05);
+}
+.navmenu_2 .slide1 {
+    background-color: rgba(128, 128, 128, 0.45);
+    z-index: 2;
+}
+.navmenu_2 .slide2 {
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.39);
+    border: 1px solid #171616;
+    z-index: 1;
+}
+.squeeze {
+    transition: all 1.5s;
+    transform: scale(0.9);
+}
+.container-header, body{
+    background-image: url(../blog_img/office.jpg);
+    height: 400px;
+    margin: 0 ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
