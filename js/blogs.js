@@ -1,13 +1,11 @@
 //alert("Hello world");
 
-
-
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
 
 
-//---------------------------------container-header---------------------------------
+//---------------------------------Menu section starting---------------------------------
 $(".navmenu_2 a").on("click", function() {
     let position = $(this)
         .parent()
@@ -43,4 +41,4 @@ let currentWidth = $(".navmenu_2")
     .width();
 let current = $(".navmenu_2 .active").position();
 $(".navmenu_2 .slide1").css({ left: +current.left, width: currentWidth });
-//---------------------------------container-header---------------------------------
+//---------------------------------Menu section ending---------------------------------
