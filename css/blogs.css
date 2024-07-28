@@ -1,5 +1,8 @@
 
 /*----------------------------Block menu with background change section starting----------------------------*/
+.container-menu{
+    margin: 10px;
+}
 .block-menu {
     padding: 0;
     position: relative;
@@ -23,13 +26,13 @@
     background-image: url('../blog_img/web_developer13.jpg');
 }
 .block-menu li:nth-child(2):hover ~ .block-menu-wall {
-    background-image: url('menu-2.jpg');
+    background-image: url('../auto_news_img/auto5.jpg');
 }
 .block-menu li:nth-child(3):hover ~ .block-menu-wall {
-    background-image: url('menu-3.jpg');
+    background-image: url('../fashion_img/style4.jpg');
 }
 .block-menu li:nth-child(4):hover ~ .block-menu-wall {
-    background-image: url('menu-4.jpg');
+    background-image: url('../travel_img/travel4.jpg');
 }
 .block-menu li:nth-child(5):hover ~ .block-menu-wall {
     background-image: url('menu-5.jpg');
