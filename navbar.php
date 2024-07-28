@@ -40,11 +40,11 @@ if ($keyword){
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blogs.php" style="font-size: large">BLOGS</a>
+                    <a class="nav-link" href="blogs.php" style="font-size: large; color: gold">BLOGS</a>
                 </li>
                 <!--------------------------Resume section starting----------------------->
                 <li class="nav-item">
-                    <a class="nav-link" download="My Resume" href="./img1/resumeio.pdf" style="font-size: large">RESUME</a>
+                    <a class="nav-link" download="My Resume" href="./img1/resumeio.pdf" style="font-size: large; color: limegreen">RESUME</a>
                 </li>
                 <!---------------------------Resume section ending------------------------>
             </ul>
