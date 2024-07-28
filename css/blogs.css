@@ -1,4 +1,89 @@
 
+/*----------------------------Block menu with background change section starting----------------------------*/
+.block-menu {
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+    margin: 20px 0;
+}
+.block-menu li a {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    z-index: 2;
+}
+.block-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.block-menu li:nth-child(1):hover ~ .block-menu-wall {
+    background-image: url('../blog_img/web_developer13.jpg');
+}
+.block-menu li:nth-child(2):hover ~ .block-menu-wall {
+    background-image: url('menu-2.jpg');
+}
+.block-menu li:nth-child(3):hover ~ .block-menu-wall {
+    background-image: url('menu-3.jpg');
+}
+.block-menu li:nth-child(4):hover ~ .block-menu-wall {
+    background-image: url('menu-4.jpg');
+}
+.block-menu li:nth-child(5):hover ~ .block-menu-wall {
+    background-image: url('menu-5.jpg');
+}
+.block-menu li .name {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    left: 40px;
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    margin-right: 80px;
+}
+.block-menu li .arrow {
+    position: absolute;
+    right: 60px;
+    top: 14px;
+    height: 60px;
+    width: 60px;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+.block-menu li .arrow svg {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+}
+.block-menu li:hover .name {
+    left: 60px;
+    margin-right: 60px;
+    transition: all 0.2s ease-in;
+}
+.block-menu li:hover .arrow {
+    right: 20px;
+    opacity: 1;
+}
+.block-menu .block-menu-wall {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('menu-no-hover.jpg');
+}
+
 /*---------------------ANIMATED TRANSITION BETWEEN PAGES section starting-----------------------*/
 .preloader {
     position: fixed;

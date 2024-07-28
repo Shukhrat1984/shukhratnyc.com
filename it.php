@@ -151,44 +151,44 @@
             </div>
             <div class="info-col-2">
                 <p> <h6>ChatGPT is good, but there are a lot of other similar tools workers can use that perhaps aren’t as well known as OpenAI’s beast. Here are just a few.</h6>
-                Is it just us, or is ChatGPT a tad overhyped? It’s essentially a search engine with a couple of additional perks like natural language bot responses and AI-generated content. But it’s still just a tool, at the end of the day.
-                No need for the endless hype. It’s been around for a while and we’ve had the chance to see its advantages and disadvantages. The tech community tends to get over-excited about the latest revolutionary new AI development – yesterday it was ChatGPT, now it’s Sora, who knows what tomorrow will bring?
-                But just because some people drink the Kool-Aid doesn’t mean you have to, too. Sure, it’s great to get to grips with ChatGPT and leverage it for your work, but don’t forget there are other similar tools out there too. One of those might suit you more. We’ve taken a look at some of them.
-                <br>
-                <br>
-                <h6>Gemini</h6>
-                If you’re a Google user, try out Gemini, Google’s answer to ChatGPT. As you’d expect, it integrates very well with other Google products. Of course, if you’re not a Google user, this might not be for you.
-                <br>
-                <br>
-                <h6>Jasper Chat</h6>
-                The disadvantage of Jasper Chat is that it is not free, unfortunately. The chat tool is part of the wider Jasper AI productivity and writing tool suite.
-                Jasper Chat is a chatbot specifically, so it does this one function quite well, as you’d expect from something you have to pay for. It’s not faultless and requires proper fact-checking of the things it generates, but you can train it to recognise your writing preferences and retain information about your brand, for example.
-                <br>
-                <br>
-                <h6>Claude</h6>
-                Built by Anthropic, Claude is coming for OpenAI’s crown. Its latest offering, the Claude 3 suite, was launched last month. It’s good for generating written content that sounds relatively natural. Content creators and creatives who manage social media profiles will probably get a lot of use out of it. It provides writing and tone suggestions to take the drudgery out of coming up with snappy social snippets.
-                <br>
-                <br>
-                <h6>Perplexity AI</h6>
-                You can get Perplexity AI for free, or you can shell out for a premium version. It might be aptly named because it requires the user to be a little bit more au fait with AI principles than some of the more beginner-friendly tools on this list.
-                It has API for integration and it can offer sophisticated advice, making it a good budget bet for businesses and even researchers.
-                <br>
-                <br>
-                <h6>GitHub Copilot</h6>
-                If you’re a student, teacher or the maintainer of an open-source project you can use GitHub’s Copilot for free. If not, you’ll have to pay. Still, if you want to use it you can do a free trial, and it’s pretty easy to get started if you already use GitHub.
-                It can be a helpful suggestion aid for programming tasks, and it can spot errors. But it’s not always right and some may find it a distraction.
-                <br>
-                <br>
-                <h6>Bing AI</h6>
-                This is Microsoft’s answer to ChatGPT and Bard and all the rest. Since Microsoft has very close links to OpenAI – they collaborate on research and Microsoft funds the lucrative upstart’s tech – Bing is built on the same system as ChatGPT. Unlike some search engine chatbots, it shows its sources. You’ll get the most out of Bing if you are a Microsoft Edge user, but you can also download the app for free.
-                <br>
-                <br>
-                <h6>Poe</h6>
-                If you have time to play around with AI, Poe could be a good platform to get started with. It has most of the different AI tools, including a lot on this list, so you can experiment with what kind of tool you think you’d get the most out of.
-                <br>
-                <br>
-                <h6>Amazon CodeWhisperer</h6>
-                Not content to let the other tech giants take over the AI space, Amazon waded in too with its tool for developers. CodeWhisperer provides real-time coding suggestions and it can, to an extent, remember a user’s preferences. However, it needs access to the user’s codebase to offer any personalised suggestions.
+                    Is it just us, or is ChatGPT a tad overhyped? It’s essentially a search engine with a couple of additional perks like natural language bot responses and AI-generated content. But it’s still just a tool, at the end of the day.
+                    No need for the endless hype. It’s been around for a while and we’ve had the chance to see its advantages and disadvantages. The tech community tends to get over-excited about the latest revolutionary new AI development – yesterday it was ChatGPT, now it’s Sora, who knows what tomorrow will bring?
+                    But just because some people drink the Kool-Aid doesn’t mean you have to, too. Sure, it’s great to get to grips with ChatGPT and leverage it for your work, but don’t forget there are other similar tools out there too. One of those might suit you more. We’ve taken a look at some of them.
+                    <br>
+                    <br>
+                    <h6>Gemini</h6>
+                    If you’re a Google user, try out Gemini, Google’s answer to ChatGPT. As you’d expect, it integrates very well with other Google products. Of course, if you’re not a Google user, this might not be for you.
+                    <br>
+                    <br>
+                    <h6>Jasper Chat</h6>
+                    The disadvantage of Jasper Chat is that it is not free, unfortunately. The chat tool is part of the wider Jasper AI productivity and writing tool suite.
+                    Jasper Chat is a chatbot specifically, so it does this one function quite well, as you’d expect from something you have to pay for. It’s not faultless and requires proper fact-checking of the things it generates, but you can train it to recognise your writing preferences and retain information about your brand, for example.
+                    <br>
+                    <br>
+                    <h6>Claude</h6>
+                    Built by Anthropic, Claude is coming for OpenAI’s crown. Its latest offering, the Claude 3 suite, was launched last month. It’s good for generating written content that sounds relatively natural. Content creators and creatives who manage social media profiles will probably get a lot of use out of it. It provides writing and tone suggestions to take the drudgery out of coming up with snappy social snippets.
+                    <br>
+                    <br>
+                    <h6>Perplexity AI</h6>
+                    You can get Perplexity AI for free, or you can shell out for a premium version. It might be aptly named because it requires the user to be a little bit more au fait with AI principles than some of the more beginner-friendly tools on this list.
+                    It has API for integration and it can offer sophisticated advice, making it a good budget bet for businesses and even researchers.
+                    <br>
+                    <br>
+                    <h6>GitHub Copilot</h6>
+                    If you’re a student, teacher or the maintainer of an open-source project you can use GitHub’s Copilot for free. If not, you’ll have to pay. Still, if you want to use it you can do a free trial, and it’s pretty easy to get started if you already use GitHub.
+                    It can be a helpful suggestion aid for programming tasks, and it can spot errors. But it’s not always right and some may find it a distraction.
+                    <br>
+                    <br>
+                    <h6>Bing AI</h6>
+                    This is Microsoft’s answer to ChatGPT and Bard and all the rest. Since Microsoft has very close links to OpenAI – they collaborate on research and Microsoft funds the lucrative upstart’s tech – Bing is built on the same system as ChatGPT. Unlike some search engine chatbots, it shows its sources. You’ll get the most out of Bing if you are a Microsoft Edge user, but you can also download the app for free.
+                    <br>
+                    <br>
+                    <h6>Poe</h6>
+                    If you have time to play around with AI, Poe could be a good platform to get started with. It has most of the different AI tools, including a lot on this list, so you can experiment with what kind of tool you think you’d get the most out of.
+                    <br>
+                    <br>
+                    <h6>Amazon CodeWhisperer</h6>
+                    Not content to let the other tech giants take over the AI space, Amazon waded in too with its tool for developers. CodeWhisperer provides real-time coding suggestions and it can, to an extent, remember a user’s preferences. However, it needs access to the user’s codebase to offer any personalised suggestions.
                 </p>
             </div>
         </div>

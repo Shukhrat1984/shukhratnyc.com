@@ -54,6 +54,57 @@
         </svg>
     </div>
 <!--Blogs text section ending-->
+<!--Block menu with background change section starting-->
+    <div class="container-menu">
+        <ul class="block-menu">
+            <li>
+                <a href="it.php">
+                    <div class="name">Information Technologies (Hi-Tech)</div>
+                    <div class="arrow">
+                        <svg viewBox="0 0 60 60"><polyline points="29.8,2.6 57.3,30 29.8,57.5 "/></svg>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="auto_news.php">
+                    <div class="name">Auto News (World Car's)</div>
+                    <div class="arrow">
+                        <svg viewBox="0 0 60 60"><polyline points="29.8,2.6 57.3,30 29.8,57.5 "/></svg>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="fashion.php">
+                    <div class="name">Fashion (Style)</div>
+                    <div class="arrow">
+                        <svg viewBox="0 0 60 60"><polyline points="29.8,2.6 57.3,30 29.8,57.5 "/></svg>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="travel.php">
+                    <div class="name">Travel (The Journey)</div>
+                    <div class="arrow">
+                        <svg viewBox="0 0 60 60"><polyline points="29.8,2.6 57.3,30 29.8,57.5 "/></svg>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#link">
+                    <div class="name">Енот</div>
+                    <div class="arrow">
+                        <svg viewBox="0 0 60 60"><polyline points="29.8,2.6 57.3,30 29.8,57.5 "/></svg>
+                    </div>
+                </a>
+            </li>
+            <div class="block-menu-wall"></div>
+        </ul>
+    </div>
+<!--Block menu with background change section ending-->
+
+
+
+
     <div class="container-footer">
         <p style="color: black; text-align: center">shukhratnyc.com</p>
     </div>
