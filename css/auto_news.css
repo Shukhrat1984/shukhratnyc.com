@@ -1,4 +1,56 @@
 
+/*------------------------------You-tube blogs section starting------------------------------*/
+.youtube-container {
+    margin: 50px;
+    /*top: 150px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-optical-sizing: initial;
+}
+.youtube-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    position: relative; /* Относительное позиционирование для корректного управления отступами */
+    flex-wrap: wrap; /* Чтобы список видео не выходил за пределы экрана и адаптировался */
+    /*padding-top: 70px; /* Отступ сверху, чтобы избежать наложения на плеер */
+    /*margin-top: 70px; /* Отступ сверху для учета высоты плеера */
+}
+.change-youtube {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    margin-top:20px;
+    margin-bottom:10px;
+    border: 6px solid #BFE2FF;
+    transition: box-shadow 0.3s linear;
+    cursor: pointer;
+    background: #BFE2FF;
+}
+.change-youtube:nth-child(2) {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.change-youtube span {
+    display: block;
+    padding: 6px 12px 0 12px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.change-youtube:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.change-youtube.active {
+    border: 6px solid #00b3ff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    color: #FFF;
+    background: #00b3ff;
+}
+
+
+
 /*---------------------ANIMATED TRANSITION BETWEEN PAGES section starting-----------------------*/
 .preloader {
     position: fixed;
@@ -132,7 +184,7 @@
     transform: scale(0.9);
 }
 .container-header, body{
-    background-image: url(../blog_img/office.jpg);
+    background-image: url(../auto_news_img/auto5.jpg);
     height: 400px;
     margin: 0 ;
     background-position: center;

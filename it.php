@@ -42,6 +42,18 @@
         </div>
     </div>
 <!--Menu section ending-->
+<!--Blogs text section starting-->
+<div id="svg-container" style="margin-top: 240px; margin-left: 300px">
+    <svg viewBox="0 0 520 50">
+        <path id="path">
+            <animate attributeName="d" from="m0,32 h0" to="m100,32 h1100" dur="10s" begin="0s" repeatCount="indefinite"/>
+        </path>
+        <text font-size="25" font-weight="bold" font-family="Tahoma" fill="black">
+            <textPath xlink:href="#path">Here is news about IT</textPath>
+        </text>
+    </svg>
+</div>
+<!--Blogs text section ending-->
 <!--Blogs section starting-->
 <main class="sgroup-container">
     <section class="sgroup">

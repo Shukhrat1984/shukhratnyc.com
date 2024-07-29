@@ -43,7 +43,7 @@
     </div>
 <!--Menu section ending-->
 <!--Travel section starting-->
-    <h1 style="margin-top: 400px; margin-bottom: 30px; text-align: center;">THE JOURNEY</h1>
+    <h1 style="margin-top: 280px; margin-bottom: 30px; text-align: center;">THE JOURNEY</h1>
     <hr>
     <h2 style="margin-top: 20px; margin-bottom: 20px; text-align: center; color: #4e4ee1;">MALDIVES</h2>
     <div class="fix-bg" style="background-image: url(./travel_img/maldives1.jpg)"></div>

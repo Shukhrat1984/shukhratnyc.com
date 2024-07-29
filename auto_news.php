@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
     <link rel="stylesheet" href="css/auto_news.css">
 </head>
 <body>
@@ -42,6 +44,57 @@
         </div>
     </div>
 <!--Menu section ending-->
+<!--Blogs text section starting-->
+<div id="svg-container" style="margin-top: 100px; margin-left: 300px">
+    <svg viewBox="0 0 520 50">
+        <path id="path">
+            <animate attributeName="d" from="m0,32 h0" to="m100,32 h1100" dur="10s" begin="0s" repeatCount="indefinite"/>
+        </path>
+        <text font-size="25" font-weight="bold" font-family="Tahoma" fill="black">
+            <textPath xlink:href="#path">Here is news about car's</textPath>
+        </text>
+    </svg>
+</div>
+<!--Blogs text section ending-->
+<!--You-tube blogs section starting-->
+<div class="youtube-container">
+    <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="dip_8dmrcaU"></div>
+    <div class="youtube-list">
+        <div class="change-youtube active" data-youtube="dip_8dmrcaU">
+            <img src="https://img.youtube.com/vi/dip_8dmrcaU/mqdefault.jpg" />
+            <span>TOP 10 CRAZIEST CONCEPT CARS 2020</span>
+        </div>
+        <div class="change-youtube" data-youtube="iXAOp2VJZLc">
+            <img src="https://img.youtube.com/vi/iXAOp2VJZLc/mqdefault.jpg" />
+            <span>New Lincoln Model L100 Concept has a Cinema Floor</span>
+        </div>
+        <div class="change-youtube" data-youtube="GgriNm5S2WE">
+            <img src="https://img.youtube.com/vi/GgriNm5S2WE/mqdefault.jpg" />
+            <span>FUTURE IN THE MAKING. Rolls Royce from the Year 2035!</span>
+        </div>
+    </div>
+    <div class="youtube-list">
+        <div class="change-youtube" data-youtube="6tUWYXe9qbY">
+            <img src="https://img.youtube.com/vi/6tUWYXe9qbY/mqdefault.jpg" />
+            <span>FUTURE IN THE MAKING. BMW Vision Next 100</span>
+        </div>
+        <div class="change-youtube" data-youtube="1SaqSIvon_U">
+            <img src="https://img.youtube.com/vi/1SaqSIvon_U/mqdefault.jpg" />
+            <span>The Audi Car of the Future - Audi Skysphere</span>
+        </div>
+        <div class="change-youtube" data-youtube="0OjZaI-aANE">
+            <img src="https://img.youtube.com/vi/0OjZaI-aANE/mqdefault.jpg" />
+            <span>I Rode In The Driverless Robotaxi Zoox</span>
+        </div>
+    </div>
+</div>
+<!--You-tube blogs section ending-->
+
+
+
+
+
+
 <!--Blogs section starting-->
     <div class="row row-cols-1 row-cols-md-2 g-12" style="margin-top: 350px; ">
         <div class="col">
@@ -99,5 +152,6 @@
     </div>
 
 <script src="js/auto_news.js"></script>
+<script src="js/auto_news2.js"></script>
 </body>
 </html>

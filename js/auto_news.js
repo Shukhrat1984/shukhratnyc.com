@@ -1,6 +1,6 @@
 //alert("Hello world");
 
-//-----------------ANIMATED TRANSITION BETWEEN PAGES section starting------------------
+//-----------------ANIMATED TRANSITION BETWEEN PAGES section starting-------------------
 $(window).on('load pageshow', function () {
     $('.preloader').removeClass("off");
     $('.preloader').addClass("on");
@@ -14,7 +14,7 @@ $("a:not([href*=javascript]):not([href*=\\#]):not(.fancybox):not([target]):not([
     }, 550);
     return false;
 });
-//----------------ANIMATED TRANSITION BETWEEN PAGES section starting---------------------
+//----------------ANIMATED TRANSITION BETWEEN PAGES section ending-----------------------
 //---------------------------------Menu section starting---------------------------------
 $(".navmenu_2 a").on("click", function() {
     let position = $(this)
