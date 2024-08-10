@@ -209,63 +209,118 @@
         width: 100%;
     }
 }
-/*----------------------------Menu section starting----------------------------*/
-.container-menu{
-    text-align: center;
+
+/*----------------------------------------Blogs text section starting----------------------------------------*/
+.shadow-wrap {
+    background: linear-gradient(to right, rgb(113, 167, 239), #b7c2d8, #6969ec); /* Цвет фона */
+    padding: 6px 0 40px 0;
+    margin: 100px 0 20px 0;
 }
-.navmenu_2 {
-    display: inline-flex;
-    background: rgba(23, 22, 22, 0.53); /*Menu background color regulator*/
-    position: relative;
-    list-style: none;
-    padding: 10px 20px;
-    justify-content: center;
+.shadow-text {
+    box-sizing: border-box;
+    margin: 20px 60px;
+    padding: 20px 30px;
+    box-shadow:
+            -9px 17px 9px rgba(0,0,0,0.05),
+            -10px 19px 10px rgba(0,0,0,0.05),
+            -11px 20px 11px rgba(0,0,0,0.025),
+            -12px 22px 12px rgba(0,0,0,0.025),
+            -13px 24px 13px rgba(0,0,0,0.025),
+            -14px 26px 14px rgba(0,0,0,0.025),
+            -15px 28px 15px rgba(0,0,0,0.025),
+            -16px 30px 16px rgba(0,0,0,0.025),
+            -17px 32px 17px rgba(0,0,0,0.025),
+            -18px 34px 18px rgba(0,0,0,0.025),
+            -19px 36px 19px rgba(0,0,0,0.025),
+            -20px 38px 20px rgba(0,0,0,0.025),
+            -21px 39px 21px rgba(0,0,0,0.025);
+}
+.shadow-text div {
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    margin: 20px 0 40px 0;
-    border-radius: 40px;
-    box-shadow: 10px 20px 30px #00000044;
-    border: 4px solid rgb(255, 255, 255);
+    line-height: 1.2;
+    color: #FFF; /* Цвет текста */
+    text-shadow:
+            -1px -1px 0 #FFF, /* Цвет контура */
+            1px -1px 0 #FFF, /* Цвет контура */
+            -1px 1px 0 #FFF, /* Цвет контура */
+            1px 1px 0 #FFF, /* Цвет контура */
+            -2px -2px 0 rgba(0,0,0,0.05),
+            2px -2px 0 rgba(0,0,0,0.05),
+            -2px 2px 0 rgba(0,0,0,0.05),
+            2px 2px 0 rgba(0,0,0,0.05),
+            -1px 2px 1px rgba(0,0,0,0.15),
+            -2px 4px 2px rgba(0,0,0,0.125),
+            -3px 6px 3px rgba(0,0,0,0.125),
+            -4px 8px 4px rgba(0,0,0,0.1),
+            -5px 10px 5px rgba(0,0,0,0.1),
+            -6px 12px 6px rgba(0,0,0,0.075),
+            -7px 13px 7px rgba(0,0,0,0.05),
+            -8px 15px 8px rgba(0,0,0,0.05),
+            -9px 17px 9px rgba(0,0,0,0.05),
+            -10px 19px 10px rgba(0,0,0,0.05),
+            -11px 20px 11px rgba(0,0,0,0.025),
+            -12px 22px 12px rgba(0,0,0,0.025),
+            -13px 24px 13px rgba(0,0,0,0.025),
+            -14px 26px 14px rgba(0,0,0,0.025),
+            -15px 28px 15px rgba(0,0,0,0.025),
+            -16px 30px 16px rgba(0,0,0,0.025),
+            -17px 32px 17px rgba(0,0,0,0.025),
+            -18px 34px 18px rgba(0,0,0,0.025),
+            -19px 36px 19px rgba(0,0,0,0.025),
+            -20px 38px 20px rgba(0,0,0,0.025),
+            -21px 39px 21px rgba(0,0,0,0.025);
 }
-.navmenu_2 li a {
+@media (max-width: 767px) {
+    .shadow-text {
+        margin: 20px;
+    }
+    .shadow-text div {
+        font-size: 30px;
+    }
+}
+hr {
+    margin: 30px 0;
+    height: 4px;
+    background: #BFE2FF;
     position: relative;
-    padding: 10px 34px;
-    font-size: 20px;
-    line-height: 1.4;
+    overflow: hidden;
     border: none;
-    color: snow;
-    display: inline-block;
-    text-decoration: none;
-    z-index: 3;
 }
-.navmenu_2 .slide1,
-.navmenu_2 .slide2 {
+hr:after {
+    content: "";
+    height: 4px;
+    background: #337AB7;
     position: absolute;
-    display: inline-block;
-    height: 48px;
-    border-radius:30px;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1.05);
+    width: 20%;
+    top: 0;
+    animation: anim-hr 5s linear infinite;
 }
-.navmenu_2 .slide1 {
-    background-color: rgba(239, 244, 250, 0.22);
-    z-index: 2;
+@keyframes anim-hr {
+    0% {
+        left: -20%;
+    }
+    100% {
+        left: 100%;
+    }
 }
-.navmenu_2 .slide2 {
-    opacity: 0;
-    background: rgba(239, 244, 250, 0.32);
-    border: 1px solid #171616;
-    z-index: 1;
-}
-.squeeze {
-    transition: all 1.5s;
-    transform: scale(0.9);
-}
-.container-header, body{
-    background-image: url(../blog_img/web_developer22.jpg);
-    height: 300px;
-    margin: 0 ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
+/*----------------------header.php----------------------------*/
+/*Menu text color will change from black to gold*/
+#navbarSupportedContent a {
+    color: black; /* Замените "Black" на любой другой цвет, который вам нужен */
+}
+#navbarSupportedContent a:hover {
+    color: #579eea; /* Цвет при наведении на ссылку */
+}
+
+/*Website background-color*/
+body{
+    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
+    width: 100%;
+    height: 100%;
 }

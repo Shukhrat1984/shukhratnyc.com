@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="css/logos.css">
 </head>
 <body>
-<!-- Header link starting-->
+<!--Header link starting-->
 <?php include "navbar.php" ?>
-<!-- Header link ending -->
+<!--Header link ending-->
+<!--Logos section starting-->
 <div class="container1">
     <div class="box">
         <a href="#">
@@ -109,6 +110,7 @@
         </a>
     </div>
 </div>
+<!--Logos section ending-->
 
 <script src="js/logos.js"></script>
 </body>

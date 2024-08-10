@@ -1,25 +1,3 @@
-1. header
-Menu (Logo + Navigation) DONE
-
-2. nav
-Animation slide  DONE
-
-
-3. body
-Hobby slide (About programmer and cars).
-
-
-4. footer
-
-
-
-
-
-Secure SSL/TLS Settings (Recommended)
-Username:  info@shukhratnyc.com
-Password:  Use the email account’s password.
-Incoming Server:  mail.shukhratnyc.com
-IMAP Port: 993 POP3 Port: 995
-Outgoing Server:  mail.shukhratnyc.com
-SMTP Port: 465
-IMAP, POP3, and SMTP require authentication.
+We have 2(two) NAVBAR.
+navbar -> index(HOME), about me, contact, my hobbies(cars, movies, music).
+navbar2 -> blogs, it, auto news, fashion, travel.

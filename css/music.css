@@ -531,9 +531,9 @@
 
 /*----------------------Carousel-3d section starting----------------------*/
 .carousel-3d {
-    padding: 20px;
+    padding: 20px 400px 20px 400px;
     -webkit-perspective: 500px;
-    perspective: 500px;
+    perspective: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -550,7 +550,6 @@
     transform-style: preserve-3d;
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .carousel-3d figure img,
 .carousel-3d figure div {

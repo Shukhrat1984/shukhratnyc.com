@@ -39,8 +39,17 @@ if ($keyword){
                         <li><a class="dropdown-item" href="music.php" style="font-size: large">MUSIC</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blogs.php" style="font-size: large; color: gold">BLOGS</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: large">
+                        MY BLOGS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="blogs.php" style="font-size: large">BLOGS</a></li>
+                        <li><a class="dropdown-item" href="it.php" style="font-size: large">IT</a></li>
+                        <li><a class="dropdown-item" href="auto_news.php" style="font-size: large">AUTO NEWS</a></li>
+                        <li><a class="dropdown-item" href="fashion.php" style="font-size: large">FASHION</a></li>
+                        <li><a class="dropdown-item" href="travel.php" style="font-size: large">TRAVEL</a></li>
+                    </ul>
                 </li>
                 <!--------------------------Resume section starting----------------------->
                 <li class="nav-item">

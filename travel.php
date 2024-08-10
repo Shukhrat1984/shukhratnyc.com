@@ -13,39 +13,42 @@
     <link rel="stylesheet" href="css/travel.css">
 </head>
 <body>
+<!-- Header link starting-->
+<?php include "navbar.php" ?>
+<!-- Header link ending -->
 <!--ANIMATED TRANSITION BETWEEN PAGES section starting-->
-    <div class="preloader">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+<div class="preloader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<!--ANIMATED TRANSITION BETWEEN PAGES section ending-->
+<!--Blogs text section starting-->
+<div class="shadow-wrap">
+    <div class="shadow-text">
+        <div>HERE ABOUT<br>THE JOURNEY WORLD</div>
+        <hr>
     </div>
-<!--ANIMATED TRANSITION BETWEEN PAGES section starting-->
-<!--Menu section starting-->
-    <div class="container-header">
-        <div class="container-menu">
-            <ul class="navmenu_2">
-                <li class="slide1"></li>
-                <li class="slide2"></li>
-                <li><a class="active" href="blogs.php">BLOGS</a></li>
-                <li><a href="it.php">IT</a></li>
-                <li><a href="auto_news.php">AUTO NEWS</a></li>
-                <li><a href="fashion.php">FASHION</a></li>
-                <li><a href="travel.php">TRAVEL</a></li>
-                <li><a href="index.php">HOME</a></li>
-            </ul>
-        </div>
-    </div>
-<!--Menu section ending-->
+</div>
+<!--Blogs text section ending-->
+<!--Travel image with animation starting-->
+<div class="abg-wr-5">
+    <!-- Блоки с данными -->
+    <ul class="abg-5">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<!--Travel image with animation ending-->
 <!--Travel section starting-->
-    <h1 style="margin-top: 280px; margin-bottom: 30px; text-align: center;">THE JOURNEY</h1>
-    <hr>
-    <h2 style="margin-top: 20px; margin-bottom: 20px; text-align: center; color: #4e4ee1;">MALDIVES</h2>
+    <h2 style="text-align: center; color: #4e4ee1;">MALDIVES</h2>
     <div class="fix-bg" style="background-image: url(./travel_img/maldives1.jpg)"></div>
         <h3 style="text-align: center;">The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands,
         is a country and archipelagic state in South Asia in the Indian Ocean. The Maldives is southwest
@@ -82,9 +85,9 @@
         ere also found (especially in terms of sea animals), which may be linked to differences in fishing pressure
         — including poaching.</h3>
 <!--Travel section ending-->
-    <div class="container-footer">
-        <p style="color: black; text-align: center">shukhratnyc.com</p>
-    </div>
+<div class="container-footer">
+    <h4 style="color: black; text-align: center">shukhratnyc.com</h4>
+</div>
 
 <script src="js/travel.js"></script>
 </body>

@@ -1,13 +1,10 @@
 
-
-
-/*---------------------------------------------------------------------------*/
-
+/*------------------------------------Logos section starting---------------------------------------*/
 .container1,.container2 {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 100px;
+    top: 200px;
     margin-bottom: 30px;
     position: relative; /* added for text-overlay positioning */
 }
@@ -47,7 +44,6 @@
 #navbarSupportedContent a:hover {
     color: #579eea; /* Цвет при наведении на ссылку */
 }
-
 /*Logo SHUKHRATNYC.COM (Menu)*/
 .logo{
     width: 75px;
