@@ -1,3 +1,4 @@
+// alert("This website contains sound!!!");
 
 //-------------------------About social media section starting--------------------------
 const contact_btn = document.querySelector('.contact-btn');

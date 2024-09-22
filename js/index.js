@@ -1,8 +1,16 @@
 // alert("This website contains sound!!!");
 
-//--------------------------------------------------------------------------------------
-
-//--------------------------------------------------------------------------------------
+//-------------------------About social media section starting--------------------------
+const contact_btn = document.querySelector('.contact-btn');
+const close_btn = document.querySelector('.close-btn');
+const contact_container = document.querySelector('.contact-container');
+contact_btn.addEventListener('click', () => {
+    contact_container.classList.toggle('visible')
+});
+close_btn.addEventListener('click', () => {
+    contact_container.classList.remove('visible')
+});
+//--------------------------About social media section ending---------------------------
 
 //-----------------------------Up button section starting-------------------------------
 $('body').append('<div class="up_btn"></div>');
@@ -39,7 +47,6 @@ function removeActiveClasses() {
         panel.classList.remove('active');
     });
 }
-
 //-------------------- Vertical accordion for images section ending---------------------
 
 //-------------------- Style for bubble-content section starting------------------------
@@ -106,7 +113,7 @@ function startOdometerAnimation() {
             odometer.update(targetValue); // Обновляем до целевого значения
             setTimeout(() => {
                 odometer.update(0); // Сбрасываем до 0
-                setTimeout(updateOdometer, 5000); // Запускаем снова через 1 секунду
+                setTimeout(updateOdometer, 1000); // Запускаем снова через 1 секунду
             }, 5000);
         }
 

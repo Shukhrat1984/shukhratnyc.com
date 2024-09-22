@@ -1,3 +1,113 @@
-We have 2(two) NAVBAR.
-navbar -> index(HOME), about me, contact, my hobbies(cars, movies, music).
-navbar2 -> blogs, it, auto news, fashion, travel.
+
+
+
+HTML:
+<!-- Frame for social media section starting-->
+    <div class="corner-box-8">
+        <div class="corner-textbox-8">
+            <!-- Social media section starting-->
+            <ul class="social-icons-7">
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="tel:+79999999999"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="tel:+79999999999"><i class="fab fa-telegram-plane"></i></a></li>
+            </ul>
+            <!-- Social media section ending-->
+        </div>
+    </div>
+<!-- Frame for social media section ending-->
+
+CSS:
+/*-----------Social media section starting-------------*/
+.social-icons-7 {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-icons-7 a {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 6px;
+    font-size: 26px;
+    overflow: hidden;
+    position: relative;
+    color: #337AB7;
+    border: 2px solid #337AB7;
+    transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
+}
+.social-icons-7 a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: #337AB7;
+}
+.social-icons-7 a i,
+.social-icons-7 a img {
+    transition: transform 0.2s linear 0s;
+    transform: rotate(-45deg);
+    position: relative;
+    z-index: 1;
+}
+.social-icons-7 a img {
+    width: 26px;
+    height: 26px;
+}
+.social-icons-7 a:hover {
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+    color: #FFF;
+    margin: 5px 11px
+}
+.social-icons-7 a:hover:after {
+    top: 0;
+    transition: all 0.2s linear 0s;
+}
+
+/*---------Frame for social media section starting-------------*/
+.corner-box-8 {
+    box-shadow: 30px 30px 46px rgba(0,0,0,0.2);
+    border: 11px solid #ededed;
+    width: 500px;
+    padding: 20px;
+    margin: 40px;
+    margin-left: 270px;
+    text-align: center;
+    display: inline-block;
+}
+.corner-textbox-8:before {
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    /*box-shadow: inset 10px 0 12px rgba(0,0,0,0.35);*/
+}
+.corner-textbox-8 {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
+    border: 12px solid #f5f5f5;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

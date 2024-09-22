@@ -132,7 +132,7 @@ hr:after {
     background-image: url('../fashion_img/style4.jpg');
 }
 .block-menu li:nth-child(4):hover ~ .block-menu-wall {
-    background-image: url('../travel_img/travel4.jpg');
+    background-image: url('../travel_img/travel1.jpg');
 }
 .block-menu li:nth-child(5):hover ~ .block-menu-wall {
     background-image: url('menu-5.jpg');

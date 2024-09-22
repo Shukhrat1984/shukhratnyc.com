@@ -1,3 +1,6 @@
+/*----------------Screen sizes section starting--------------------*/
+@import "../css_screens/index_screen.css";
+
 /*----------------Up button section starting--------------------*/
 .up_btn {
     opacity: 0.8;
@@ -20,100 +23,133 @@
     background-color: #337AB7;
 }
 
-/*-----------Social media section starting-------------*/
-.social-icons-7 {
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+/*--------------------About social media section starting---------------------*/
+.contact-container * {
+    box-sizing: content-box;
 }
-.social-icons-7 a {
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 6px;
-    font-size: 26px;
-    overflow: hidden;
-    position: relative;
-    color: #337AB7;
-    border: 2px solid #337AB7;
-    transition: border-radius 0.2s linear 0s;
-    transform: rotate(45deg);
-}
-.social-icons-7 a:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
+.contact-container {
+    position: fixed;
     right: 0;
-    margin: auto;
-    position: absolute;
-    background-color: #337AB7;
+    z-index: 99999999;
+    bottom: 80px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
 }
-.social-icons-7 a i,
-.social-icons-7 a img {
-    transition: transform 0.2s linear 0s;
-    transform: rotate(-45deg);
-    position: relative;
-    z-index: 1;
+.contact-container.visible {
+    transform: translateX(-10px);
 }
-.social-icons-7 a img {
-    width: 26px;
-    height: 26px;
-}
-.social-icons-7 a:hover {
-    border-radius: 0;
-    width: 50px;
-    height: 50px;
-    color: #FFF;
-    margin: 5px 11px
-}
-.social-icons-7 a:hover:after {
-    top: 0;
-    transition: all 0.2s linear 0s;
-}
-
-/*---------Frame for social media section starting-------------*/
-.corner-box-8 {
-    box-shadow: 30px 30px 46px rgba(0,0,0,0.2);
-    border: 11px solid #ededed;
-    width: 500px;
-    padding: 20px;
-    margin: 40px;
-    margin-left: 270px;
-    text-align: center;
-    display: inline-block;
-}
-.corner-textbox-8:before {
-    content: " ";
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    /*box-shadow: inset 10px 0 12px rgba(0,0,0,0.35);*/
-}
-.corner-textbox-8 {
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
-    background: linear-gradient(to right, rgb(110, 173, 211), #dae3f4, #7F7FD5);
-    border: 12px solid #f5f5f5;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 12px;
+.contact {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    border: 5px solid #337AB7;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    position: relative;
+    height: 110px;
+    width: 350px;
+    max-width: calc(100% - 10px);
+}
+.contact span.close-btn {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.contact span.close-btn svg {
+    stroke: #337AB7;
+    width: 20px;
+    height: 20px;
+}
+.contact span.close-btn:focus {
+    outline: none;
+}
+.contact div {
+    background-color: #337AB7;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 18px;
+    padding: 2px 0 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 280px;
+}
+.contact ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact ul li {
+    margin: 24px 6px 0 6px;
+}
+.contact ul li a {
+    border: 4px solid #BFE2FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    font-size: 24px;
+    color: #337AB7;
+    width: 48px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.contact ul li a:hover {
+    border-color: #337AB7;
+    color: #000;
+    box-shadow: 0 9px 12px -9px #337AB7;
+}
+.contact-btn {
+    border-radius: 30px;
+    background-color: #337AB7;
+    border: 2px solid #337AB7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 99999999;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+.contact-btn:hover {
+    background-color: #ffffff;
+    color: #337AB7;
+}
+.contact-btn:focus {
+    outline: none;
+}
+@media screen and (max-width: 480px) {
+    .contact-container.visible {
+        transform: translateX(0px);
+    }
+    .contact-btn {
+        right: 10px;
+    }
 }
 
-/*----container4. Preloader-Ring container-----*/
+/*----Preloader-Ring section starting-----*/
 .preloader {
     display: flex;
     animation: spin-1 8s linear infinite;
@@ -265,7 +301,7 @@
     }
 }
 
-/*----container4. Globe World container-----*/
+/*----Globe World section starting-----*/
 .globe-container,
 .globe {
     width: 200px;
@@ -362,12 +398,68 @@
     }
 }
 
-/*----container4. Bubble-container2-----*/
-.container4{
-    margin-top: -60px;
+/*-----"container-center" Globe World, Preloader-Ring section starting-----*/
+.container-center {
+    justify-content: center;
+    align-items: center;
+    align-content: center; /* Centers items vertically in the grid */
+    justify-items: center; /* Aligns grid items horizontally within their grid cells */
+    margin-left: 400px;
 }
 
-/* ----- container style for Grid with Percentages -----*/
+/*------Bubble-container2 section starting-----*/
+.bubble-container2 {
+    justify-content: center;
+    padding: 30px;/*bubble*/
+    margin: 110px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.bubble-content2 {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.26);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border-radius: 10px;
+}
+.bubble-content2 h1{
+    text-align: center;
+    display: grid;
+}
+.bubble-content2 p{
+    text-align: center;
+    font-size: 25px;
+    display: grid;
+}
+span.bubble {
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: blow 2s ease-in infinite;
+    transition: all 400ms ease;
+}
+@keyframes blow {
+    0% {
+        transform: translate(-50%, -50%) scale(0.1);
+        opacity: 0;
+    }
+    10% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -100%);
+        opacity: 0;
+    }
+}
+
+/* -----Container style for grid with percentages section starting-----*/
 .wpo-about-funfact {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /*Can change (4, 1fr) or (5, 1fr) add grid*/
@@ -516,43 +608,69 @@
     color: gold;
 }
 
-/*-----container3 4-images-----*/
-.container3 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    position: relative; /* added for text-overlay positioning */
-}
-.box {
-    margin: 5px;
-    position: relative;
-}
-.box img {
-    width: 165px;
-    height: 300px;
-}
-.box:hover {
-    transform: scale(1.1);
-    transition: transform 0.9s ease-in-out;
-}
-.text-overlay {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 15px;
-    font-weight: normal;
-    display: flex;
+/*-----Four images section starting-----*/
+.hero-section{
     align-items: center;
+    display: flex;
+    min-height: 60vh;
+    justify-content: center;
 }
-.text-overlay svg {
-    margin-right: 5px;
+.card-grid{
+    display: inline-flex;
+    grid-column-gap: 40px;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    transition: 0.8s ease-in-out;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 2px 30px 30px rgba(0,0,0,0.5);
+}
+.card-background{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear , transform 200ms linear;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+}
+.card-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 24px;
+}
+.card-heading{
+    color: #fff;
+    font-size: 1.9rem;
+    line-height: 1.4;
+    width: 100%;
+}
+.card-category{
+    position: absolute;
+    left: 35%;
+    top: 14em;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.card:hover .card-background{
+    transform: scale(1.05) translateZ(0);
+}
+.card-grid:hover > .card:not(:hover) , .card-content:not(:hover) .card-background{
+    filter: brightness(0.8) saturate(1) contrast(1.2) blur(10px);
 }
 
-/*----container1. Big text SHUKHRAT-----*/
+/*----Big text SHUKHRAT section starting-----*/
 .a-stroke {
     margin: 0;
 }
@@ -596,7 +714,7 @@
     }
 }
 
-/*----container1. Vertical accordion for images-----*/
+/*----Vertical accordion for images section starting-----*/
 .panel-container * {
     box-sizing: border-box;
 }
@@ -666,18 +784,15 @@
     }
 }
 
-/*----container1. Bubble-container1-----*/
-.bubble-content p{
-    text-align: center;
-}
-.bubble-container {
+/*----Bubble-container1 section starting-----*/
+.bubble-container1 {
     justify-content: center;
-    padding: 30px;/*bubble*/
-    margin: 110px;
+    padding: 30px 30px 30px 30px;/*bubble*/
+    margin-top: 200px;
     margin-bottom: 50px;
     position: relative;
 }
-.bubble-content {
+.bubble-content1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
     background: rgba(255, 255, 255, 0.26);
     position: relative;
@@ -688,6 +803,15 @@
     justify-content: center;
     min-height: 150px;
     border-radius: 10px;
+}
+.bubble-content1 h1{
+    text-align: center;
+    display: grid;
+}
+.bubble-content1 p{
+    text-align: center;
+    font-size: 25px;
+    display: grid;
 }
 span.bubble {
     border-radius: 50%;
